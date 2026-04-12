@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ─── Primary SEO ─────────────────────────────────────────────────── -->
+<title>Vault CPA — Chartered Professional Accountant | Vancouver, BC</title>
+<meta name="description" content="Vault CPA is a boutique chartered professional accounting firm in Vancouver, BC. Corporate tax, bookkeeping, review engagements, CFO support, and personal tax. Senior CPA on every file.">
+<meta name="keywords" content="Vancouver CPA, chartered professional accountant Vancouver, corporate accounting Vancouver, personal tax Vancouver, bookkeeping Vancouver, outsourced CFO Vancouver, boutique accounting firm BC">
+<meta name="author" content="Vault CPA">
+<link rel="canonical" href="https://vaultcpa.com/">
+
+<meta name="theme-color" content="#0a0c0d">
+<meta name="geo.region" content="CA-BC">
+<meta name="geo.placename" content="Vancouver, British Columbia">
+<meta name="geo.position" content="49.2739;-123.1253">
+<meta name="ICBM" content="49.2739, -123.1253">
+<meta name="robots" content="index, follow">
+
+<!-- ─── Open Graph (Facebook / LinkedIn) ────────────────────────────── -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vaultcpa.com/">
+<meta property="og:title" content="Vault CPA — Chartered Professional Accountant | Vancouver, BC">
+<meta property="og:description" content="Vault CPA is a boutique CPA firm in Vancouver, BC delivering corporate tax, bookkeeping, review engagements, and personal tax services with senior-level attention on every file.">
+<meta property="og:image" content="https://vaultcpa.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vault CPA — Chartered Professional Accountant Vancouver">
+<meta property="og:site_name" content="Vault CPA">
+<meta property="og:locale" content="en_CA">
+
+<!-- ─── Twitter / X Card ─────────────────────────────────────────────── -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://vaultcpa.com/">
+<meta name="twitter:title" content="Vault CPA — Chartered Professional Accountant | Vancouver, BC">
+<meta name="twitter:description" content="Vault CPA is a boutique chartered professional accounting firm in Vancouver, BC. Corporate tax, bookkeeping, review engagements, CFO support, and personal tax. Senior CPA on every file.">
+<meta name="twitter:image" content="https://vaultcpa.com/og-image.jpg">
+
+<!-- ─── Local Business Schema (JSON-LD) ─────────────────────────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["AccountingService", "LocalBusiness"],
+  "name": "Vault CPA",
+  "legalName": "Vault CPA",
+  "description": "Vault CPA is a boutique chartered professional accounting firm in Vancouver, BC, offering corporate tax, bookkeeping, review and assurance, outsourced CFO services, and financial planning for businesses and individuals across British Columbia.",
+  "url": "https://vaultcpa.com",
+  "telephone": "+16047793604",
+  "email": "info@vaultcpa.com",
+  "currenciesAccepted": "CAD",
+  "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "601-1455 Howe St.",
+    "addressLocality": "Vancouver",
+    "addressRegion": "BC",
+    "postalCode": "V6Z 1C2",
+    "addressCountry": "CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.2739,
+    "longitude": -123.1253
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "09:00", "closes": "17:30"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:00", "closes": "17:00"}
+  ],
+  "areaServed": {"@type": "State", "name": "British Columbia"},
+  "hasCredential": "Chartered Professional Accountant (CPA)",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "ratingCount": "4"
+  },
+  "sameAs": ["https://vaultcpa.com", "https://vaultcpa.pages.dev"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+@keyframes blink { 0%, 49.9% { opacity: 0; } 50%, 100% { opacity: 1; } }
+html { overflow-x: hidden; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Raleway', sans-serif; background: #161819; overflow-x: hidden; }
+
+/* NAV — thinned by 20% from 52px → 42px */
+nav { flex-shrink: 0; background: #0a0c0d; border-bottom: 1px solid #2c3235; display: flex; align-items: center; justify-content: space-between; padding: 0 6vw; height: 34px; position: relative; z-index: 100; }
+/* logo: centered vertically with padding so it doesn't touch the bottom border */
+.nav-logo { display: flex; align-items: flex-start; height: 100%; padding: 0; }
+.nav-logo img { height: 24.8px; width: auto; display: block; object-fit: contain; mix-blend-mode: lighten; }
+.nav-links { display: flex; align-items: center; gap: 10px; list-style: none; height: 100%; }
+.nav-links > li { position: relative; height: 100%; display: flex; align-items: center; }
+.nav-links > li > a { font-family: 'Source Sans 3', sans-serif; font-size: 11.4px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #9aa2a8; text-decoration: none; padding: 6px 14px; transition: color 0.2s; display: flex; align-items: center; gap: 5px; white-space: nowrap; }
+.nav-links > li > a:hover { color: #fff; }
+.nav-links > li > a svg { width: 10px; height: 10px; transition: transform 0.2s; }
+.nav-links > li:hover > a svg { transform: rotate(180deg); }
+.dropdown { display: none; position: absolute; top: 100%; left: 0; background: #0e1012; border: 1px solid #2c3235; border-top: 1px solid #3a4248; min-width: 240px; z-index: 200; }
+.nav-links > li:hover .dropdown { display: block; }
+.dropdown a { display: flex; align-items: center; justify-content: space-between; padding: 7px 18px; color: #9aa2a8; font-family: 'Source Sans 3', sans-serif; font-size: 12.3px; font-weight: 400; text-decoration: none; border-bottom: 1px solid #1e2022; transition: color 0.15s, padding-left 0.15s; }
+.dropdown a:last-child { border-bottom: none; }
+.dropdown a:hover { color: #fff; background: rgba(255,255,255,0.04); padding-left: 22px; }
+.drop-arr { font-size: 7.6px; }
+.nav-hamburger { display: none; }
+.mobile-menu { display: none; }
+
+/* HERO */
+.hero-screen { height: 100vh; min-height: 600px; display: flex; flex-direction: column; background: #0a0c0d; overflow: hidden; }
+.hero-black { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #0a0c0d; background-image: linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.012) 1px, transparent 1px); background-size: 80px 80px; }
+.hero-logo-img { width: clamp(227.4px, 34.295vw, 454.9px); height: auto; display: block; margin-bottom: 10px; }
+.hero-divider { display: none; }
+.hero-tagline { font-family: 'Source Sans 3', sans-serif; font-size: clamp(0.8rem, 1.1372vw, 0.96rem); font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase; color: #7a8690; }
+.hero-photo { flex-shrink: 0; height: 33vh; min-height: 180px; overflow: hidden; }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: right center; display: block; }
+
+/* QUICKLINKS
+   Middle box: min-height 90px (unchanged)
+   Top + bottom boxes: 20% thicker = 108px min-height, with extra padding top/bottom
+   so text position relative to middle box stays same — we add equal padding on outer sides */
+.vc-wrap { display: grid; grid-template-columns: 1fr 1fr; background: #161819; border-bottom: 1px solid #2c3235; min-height: 420px; }
+.vc-boxes { display: flex; flex-direction: column; justify-content: center; height: 100%; }
+.vc-box { background: #161819; border: 1px solid #2c3235; border-bottom: none; display: flex; align-items: center; justify-content: space-between; text-decoration: none; gap: 12px; cursor: pointer; transition: background 0.25s, border-color 0.25s; }
+.vc-box:last-child { border-bottom: none; }
+.vc-box:hover { background: #202426; border-color: #202426; }
+.vc-box:hover .ql-title { color: #e0e4e8; }
+.vc-box:hover .ql-arrow { opacity: 1; }
+
+/* middle box — further 10% slimmer: 20px → 18px padding */
+.vc-box:nth-child(2) { padding: 18px 6vw; min-height: 58px; }
+
+/* top box — space saved from middle (2px) added to outer (top) side; inner padding matches middle's 18px */
+.vc-box:nth-child(1) { padding: 40px 6vw 18px; min-height: 90px; flex: 1; align-items: flex-end; }
+
+/* bottom box — space saved from middle (2px) added to outer (bottom) side; inner padding matches middle's 18px */
+.vc-box:nth-child(3) { padding: 18px 6vw 40px; min-height: 90px; flex: 1; align-items: flex-start; }
+
+.ql-title { font-family: 'Raleway', sans-serif; font-size: 19.9px; font-weight: 800; color: #e0e4e8; transition: color 0.25s; }
+.ql-arrow { width: 18px; height: 18px; flex-shrink: 0; transition: opacity 0.25s; }
+.vc-text { padding: 32px 6vw; display: flex; flex-direction: column; justify-content: center; border-left: 1px solid #2c3235; }
+
+.vc-accent-line { width: 24px; height: 1px; background: #3a4248; margin-bottom: 12px; }
+.vc-headline { font-family: 'Raleway', sans-serif; font-size: clamp(17.1px, 1.7725vw, 23.7px); font-weight: 800; color: #f0f2f3; line-height: 1.1; margin-bottom: 10px; }
+.vc-headline span { color: #9aa2a8; font-weight: 300; }
+.vc-tagline { font-family: 'Source Sans 3', sans-serif; font-size: 15.2px; font-weight: 300; color: #c4cdd0; line-height: 1.49; margin-bottom: 18px; margin-top: 32px; }
+.vc-btn { display: inline-flex; align-items: center; gap: 8px; background: #c4cdd0; color: #161819; border: none; font-family: 'Raleway', sans-serif; font-size: 12.3px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 18px; text-decoration: none; cursor: pointer; border-radius: 6px; transition: background 0.2s, color 0.2s; }
+.vc-btn:hover { background: #fff; color: #0a0c0d; }
+.vc-btn svg { width: 14px; height: 14px; }
+
+/* WHAT WE DO */
+.svc-section { background: #202426; border-bottom: 1px solid #2c3235; min-height: 420px; }
+.svc-header { padding: 64px 6vw 48px; }
+.svc-kicker { font-size: 12.3px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #9aa2a8; margin-bottom: 14px; font-family: 'Source Sans 3', sans-serif; }
+.svc-heading { font-size: clamp(17.1px, 1.7725vw, 23.7px); font-weight: 800; color: #f0f2f3; line-height: 0.94; letter-spacing: -0.02em; max-width: 680px; }
+.svc-heading em { font-style: normal; color: #9aa2a8; font-weight: 300; }
+.svc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: #2c3235; }
+.svc-card { background: #202426; padding: 32px 6vw; display: flex; flex-direction: column; }
+.svc-card-tag { font-family: 'Source Sans 3', sans-serif; font-size: 13.3px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #dde2e6; margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #2c3235; }
+.svc-card-desc { font-family: 'Source Sans 3', sans-serif; font-size: 15.2px; font-weight: 300; color: #c4cdd0; line-height: 1.53; flex: 1; }
+
+/* CTA */
+.cta-wrap { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid #2c3235; min-height: 420px; }
+.cta-left { padding: 48px 6vw; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; background: #0a0c0d; border-right: 1px solid #2c3235; }
+.cta-kicker { font-size: 10.4px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #9aa2a8; margin-bottom: 14px; font-family: 'Source Sans 3', sans-serif; }
+.cta-accent { width: 28px; height: 1px; background: #3a4248; margin-bottom: 16px; }
+.cta-heading { font-size: clamp(17.1px, 1.7725vw, 23.7px); font-weight: 800; color: #f0f2f3; line-height: 1.02; letter-spacing: -0.01em; margin-bottom: 14px; }
+.cta-heading span { color: #9aa2a8; font-weight: 300; }
+.cta-body { font-family: 'Source Sans 3', sans-serif; font-size: 15.2px; font-weight: 300; color: #c4cdd0; line-height: 1.53; margin-bottom: 28px; }
+.cta-btn { display: inline-flex; align-items: center; gap: 10px; background: #c4cdd0; color: #0a0c0d; font-family: 'Raleway', sans-serif; font-size: 12.3px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 7px 26px; text-decoration: none; cursor: pointer; border: none; border-radius: 6px; transition: background 0.2s; }
+.cta-btn:hover { background: #fff; }
+.cta-btn svg { width: 16px; height: 16px; }
+.cta-image { overflow: hidden; position: relative; display: flex; align-items: center; justify-content: center; }
+.cta-image img.cta-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+
+/* STATS + TESTIMONIALS */
+.social-proof { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid #2c3235; min-height: 420px; }
+.stats-col { background: #2c3235; padding: 48px 6vw; border-right: 1px solid #3a4248; display: flex; flex-direction: column; }
+.stat-row { display: flex; flex-direction: column; padding: 32px 0; border-bottom: 1px solid #3a4248; }
+.stat-row:last-child { border-bottom: none; }
+.stat-text-num { font-family: 'Raleway', sans-serif; font-size: 18.9px; font-weight: 800; color: #f0f2f3; line-height: 0.85; margin-bottom: 4px; }
+.stat-text-label { font-family: 'Source Sans 3', sans-serif; font-size: 12.3px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: #c4cdd0; }
+.testimonials-col { background: #202426; padding: 48px 6vw; display: flex; flex-direction: column; justify-content: center; }
+.t-header { font-family: 'Source Sans 3', sans-serif; font-size: 12.3px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9aa2a8; margin-bottom: 24px; }
+.testimonial-slide { display: none; }
+.testimonial-slide.active { display: block; }
+.t-stars { color: #c4cdd0; font-size: 17.1px; letter-spacing: 3px; margin-bottom: 14px; }
+.t-quote { font-family: 'Source Sans 3', sans-serif; font-size: 15.2px; font-weight: 300; color: #c4cdd0; line-height: 1.53; font-style: italic; margin-bottom: 16px; }
+.t-author { font-family: 'Raleway', sans-serif; font-size: 16.1px; font-weight: 700; color: #e0e4e8; }
+.t-company { font-size: 13.3px; color: #9aa2a8; margin-top: 2px; font-family: 'Source Sans 3', sans-serif; }
+.t-controls { display: flex; gap: 8px; margin-top: 20px; }
+.t-dot { width: 6px; height: 6px; border-radius: 50%; background: #3a4248; border: none; cursor: pointer; padding: 0; transition: background 0.2s; }
+.t-dot.active { background: #9aa2a8; }
+
+/* FOOTER */
+footer { background: #111315; border-top: 1px solid #2c3235; padding: 56px 6vw 48px; }
+.footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1.4fr; gap: 40px; padding-bottom: 40px; }
+.footer-brand-logo { font-family: 'Raleway', sans-serif; font-size: 23.7px; font-weight: 800; color: #f0f2f3; text-decoration: none; display: block; margin-bottom: 16px; letter-spacing: 0.02em; }
+.footer-brand-logo span { font-weight: 400; color: #7a8690; }
+.footer-tagline { font-size: 14.2px; color: #9aa2a8; line-height: 1.7; max-width: 260px; margin-bottom: 24px; font-family: 'Source Sans 3', sans-serif; }
+.footer-col-title { font-family: 'Source Sans 3', sans-serif; font-size: 12.3px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #dde2e6; margin-bottom: 16px; }
+.footer-col a { display: block; font-size: 14.2px; color: #9aa2a8; text-decoration: none; padding: 4px 0; transition: color 0.2s; font-family: 'Source Sans 3', sans-serif; }
+.footer-col a:hover { color: #fff; }
+.newsletter-title { font-family: 'Source Sans 3', sans-serif; font-size: 12.3px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #dde2e6; margin-bottom: 10px; }
+.newsletter-sub { font-family: 'Source Sans 3', sans-serif; font-size: 14.2px; color: #9aa2a8; line-height: 1.6; margin-bottom: 14px; }
+.newsletter-form { display: flex; flex-direction: column; gap: 8px; }
+.newsletter-form input { background: #202426; border: 1px solid #3a4248; padding: 7px 14px; font-family: 'Source Sans 3', sans-serif; font-size: 11.4px; color: #c4cdd0; outline: none; transition: border-color 0.2s; border-radius: 6px; line-height: 1; width: 100%; box-sizing: border-box; }
+.newsletter-form input:focus { border-color: #7a8690; }
+.newsletter-form button { background: #c4cdd0; color: #161819; font-family: 'Raleway', sans-serif; font-size: 11.4px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 7px 26px; border: none; cursor: pointer; border-radius: 6px; transition: background 0.2s; width: 100%; box-sizing: border-box; }
+.newsletter-form button:hover { background: #fff; }
+
+.footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1.4fr; gap: 40px; padding-bottom: 48px; }
+
+.newsletter-title { font-family: 'Source Sans 3', sans-serif; font-size: 12.3px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #dde2e6; margin-bottom: 10px; }
+.newsletter-sub { font-family: 'Source Sans 3', sans-serif; font-size: 14.2px; color: #9aa2a8; line-height: 1.6; margin-bottom: 14px; max-width: 400px; }
+.newsletter-form { display: flex; flex-direction: column; gap: 8px; }
+.newsletter-form input { background: #202426; border: 1px solid #3a4248; padding: 7px 14px; font-family: 'Source Sans 3', sans-serif; font-size: 11.4px; color: #c4cdd0; outline: none; transition: border-color 0.2s; border-radius: 6px; line-height: 1; width: 100%; box-sizing: border-box; }
+.newsletter-form input:focus { border-color: #7a8690; }
+.newsletter-form button { background: #c4cdd0; color: #161819; font-family: 'Raleway', sans-serif; font-size: 11.4px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 7px 26px; border: none; cursor: pointer; border-radius: 6px; transition: background 0.2s; width: 100%; box-sizing: border-box; }
+.newsletter-form button:hover { background: #fff; }
+
+.divider { width: 100%; height: 1px; background: #2c3235; }
+.contact-item-row { display: flex; align-items: center; justify-content: center; padding: 9px 6vw; background: #111315; transition: background 0.2s; }
+.contact-item-row:hover { background: #202426; }
+.contact-item { font-size: 15.2px; color: #e0e4e8; text-decoration: none; letter-spacing: 0.03em; font-family: 'Source Sans 3', sans-serif; font-weight: 300; }
+.copy-bar { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
+.copy-text { font-size: 12.3px; color: #3a4248; font-family: 'Source Sans 3', sans-serif; }
+.copy-links { display: flex; gap: 20px; }
+.copy-links a { font-size: 12.3px; color: #3a4248; text-decoration: none; transition: color 0.2s; font-family: 'Source Sans 3', sans-serif; }
+.copy-links a:hover { color: #9aa2a8; }
+
+/* MOBILE PORTRAIT: logo 85svw, image 33svh at bottom anchored to top */
+@media (max-width: 600px) and (orientation: portrait) {
+  .hero-screen { height: 100svh; min-height: unset; }
+  .hero-black { flex: 0 0 67svh; }
+  .hero-photo { flex: 0 0 33svh; min-height: unset; }
+  .hero-photo img { object-position: right top; }
+  .hero-logo-img { width: 85svw; height: auto; max-height: none; margin-bottom: 16px; }
+  .hero-divider { width: 78svw; margin-bottom: 12px; }
+}
+
+/* MOBILE LANDSCAPE: logo 55svh, image anchored to top */
+@media (max-width: 900px) and (orientation: landscape) and (max-height: 500px) {
+  .hero-screen { height: auto; min-height: unset; }
+  .hero-black {
+    height: 100svh;
+    flex: none;
+    justify-content: center;
+    padding: 0 6vw;
+    background-image: linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.012) 1px, transparent 1px);
+    background-size: 80px 80px;
+  }
+  .hero-logo-img { width: 40svw; height: auto; max-height: none; margin-bottom: 10px; }
+  .hero-divider { margin-bottom: 8px; width: 38svh; }
+  .hero-photo { height: 70svh; min-height: unset; flex: none; }
+}
+
+/* ============================================
+   HAMBURGER MENU — tablet and below (≤768px)
+   ============================================ */
+@media (max-width: 768px) {
+  .nav-links { display: none !important; }
+    .nav-hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.5px;
+    cursor: pointer;
+    padding: 6px;
+    background: none;
+    border: none;
+    z-index: 300;
+  }
+  .nav-hamburger span {
+    display: block;
+    width: 26.4px;
+    height: 1.4px;
+    background: #c4cdd0;
+    border-radius: 2px;
+    transition: background 0.2s;
+  }
+  .nav-hamburger:hover span { background: #fff; }
+  .nav-logo img { height: 24.8px; }
+
+  /* Mobile dropdown panel */
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 34px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: calc(100vh - 34px);
+    background: #0e1012;
+    border-bottom: none;
+    z-index: 250;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .mobile-menu.open { display: block; }
+  body.menu-open { overflow: hidden; position: fixed; width: 100%; }
+    .mobile-menu a {
+    display: block;
+    padding: 8.6px 6vw;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 15.8px;
+    font-weight: 400;
+    color: #657580;
+    text-decoration: none;
+    border-bottom: 1px solid #1e2022;
+    transition: color 0.15s, background 0.15s;
+  }
+  .mobile-menu a:hover { color: #fff; background: rgba(255,255,255,0.04); }
+  .mobile-menu .mob-section-title {
+    display: block;
+    padding: 9.8px 6vw 4.9px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 15.8px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #dde2e6;
+    border-bottom: 1px solid #2c3235;
+    background: #161819;
+    text-decoration: none;
+  }
+  .mobile-menu a.mob-section-title:hover { color: #fff; background: #161819; }
+  .mobile-menu .mob-sub a {
+    padding-left: calc(6vw + 16px);
+    font-size: 17.5px;
+    color: #7a8690;
+  }
+  .mobile-menu .mob-sub a:hover { color: #c4cdd0; }
+}
+
+  .mob-spacer { display: block; height: 112px; background: #0e1012; }
+@media (min-width: 769px) {
+  .nav-hamburger { display: none; }
+  .mobile-menu { display: none !important; }
+}
+@media (max-width: 600px) {
+
+  /* Financial Clarity box below the three quicklink boxes */
+  .vc-wrap { display: flex !important; flex-direction: column !important; }
+  .vc-boxes { order: 1; width: 100%; }
+  .vc-boxes .vc-box { flex: none; min-height: 64px; align-items: center !important; }
+  .vc-boxes .vc-box:nth-child(1) { flex: none; padding-top: 67px; padding-bottom: 18px; align-items: flex-end !important; }
+  .vc-boxes .vc-box:nth-child(3) { flex: none; padding-top: 18px; padding-bottom: 67px; align-items: flex-start !important; }
+  .vc-text { order: 2; border-left: none !important; border-top: 1px solid #2c3235; }
+
+  /* 1) For Individuals below For Business Owners */
+  .svc-grid { display: flex !important; flex-direction: column !important; }
+
+  /* 3) Client Testimonials below CPA Certified stats column */
+  .social-proof { display: flex !important; flex-direction: column !important; }
+  .stats-col        { order: 1; border-right: none !important; border-bottom: 1px solid #3a4248; }
+  .testimonials-col { order: 2; }
+  .stat-row { padding: 16px 0; }
+
+  /* 2) Handshake image and logo below Get Started box */
+  .cta-wrap { display: flex !important; flex-direction: column !important; }
+  .cta-image { order: 1 !important; }
+  .cta-left { order: 2 !important; }
+  .cta-left  { order: 2; min-height: auto !important; border-right: none !important; border-top: 1px solid #2c3235; padding: 64px 6vw !important; }
+  .cta-image { order: 1; height: 260px; min-height: unset; overflow: hidden; }
+  .cta-image img.cta-bg { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  /* 4) Footer: Services, Resources, Newsletter stack below Vault CPA and slogan */
+  footer { overflow-x: hidden; }
+  .footer-grid { display: flex !important; flex-direction: column !important; gap: 28px !important; }
+  .footer-tagline { max-width: 100% !important; }
+
+  .copy-bar { flex-direction: column; gap: 12px; align-items: flex-start; }
+  .copy-links { flex-wrap: wrap; gap: 12px; }
+  .newsletter-form input,
+  .newsletter-form button { width: 100%; box-sizing: border-box; }
+}
+
+.addr-br { display: none; }
+@media (max-width: 768px) and (orientation: portrait) { .addr-br { display: block; } }
+
+@media (max-width: 1024px) and (orientation: landscape), (max-width: 768px) and (orientation: portrait) {
+  .cta-bg-desktop { display: none !important; }
+  .cta-bg-mobile { display: block !important; }
+}
+@media (min-width: 1280px) {
+  .ql-title { font-size: 20.8px; }
+}
+@media (min-width: 1600px) {
+  .ql-title { font-size: 21.8px; }
+  .vc-headline, .svc-heading, .cta-heading { font-size: 26.5px; }
+  .vc-tagline, .svc-card-desc, .cta-body, .t-quote { font-size: 17.1px; }
+  .svc-card-tag, .t-company { font-size: 14.2px; }
+  .stat-text-num { font-size: 20.8px; }
+  .t-author { font-size: 18px; }
+  .t-stars { font-size: 18.9px; }
+}
+
+
+
+xt-num { font-size: 20.8px; }
+  .t-author { font-size: 18px; }
+  .t-stars { font-size: 18.9px; }
+}
+
+
+
+  .about-col-title { font-size: 17.6px !important; }
+  .about-hero-body { font-size: 17.6px !important; }
+  .about-hero-kicker { font-size: 12.1px !important; }
+  .about-hero-tagline { font-size: 17.6px !important; }
+  .about-section-heading { font-size: 23.1px !important; }
+  .about-section-kicker { font-size: 12.1px !important; }
+  .contact-item { font-size: 17.6px !important; }
+  .copy-links a { font-size: 14.3px !important; }
+  .copy-text { font-size: 14.3px !important; }
+  .cta-band-body { font-size: 17.6px !important; }
+  .cta-band-btn { font-size: 14.3px !important; }
+  .cta-body { font-size: 17.6px !important; }
+  .cta-btn { font-size: 14.3px !important; }
+  .cta-heading { font-size: 19.8px !important; }
+  .cta-kicker { font-size: 12.1px !important; }
+  .footer-brand-logo { font-size: 27.5px !important; }
+  .footer-col a { font-size: 16.5px !important; }
+  .footer-col-title { font-size: 14.3px !important; }
+  .footer-tagline { font-size: 16.5px !important; }
+  .founder-body { font-size: 17.6px !important; }
+  .founder-cred { font-size: 17.6px !important; }
+  .founder-heading { font-size: 22px !important; }
+  .founder-kicker { font-size: 12.1px !important; }
+  .founder-nav { font-size: 17.6px !important; }
+  .founder-photo-name { font-size: 17.6px !important; }
+  .founder-photo-title { font-size: 17.6px !important; }
+  .founder-value-body { font-size: 17.6px !important; }
+  .founder-value-num { font-size: 12.1px !important; }
+  .founder-value-title { font-size: 17.6px !important; }
+  .founder-who-body { font-size: 17.6px !important; }
+  .founder-who-title { font-size: 17.6px !important; }
+  .hero-consult-btn { font-size: 12.1px !important; }
+  .mission-label { font-size: 12.1px !important; }
+  .mission-stat-label { font-size: 16.5px !important; }
+  .mission-stat-num { font-size: 37.4px !important; }
+  .mission-statement { font-size: 23.1px !important; }
+  .newsletter-form button { font-size: 13.2px !important; }
+  .newsletter-form input { font-size: 13.2px !important; }
+  .newsletter-sub { font-size: 16.5px !important; }
+  .newsletter-title { font-size: 14.3px !important; }
+  .process-body { font-size: 17.6px !important; }
+  .process-heading { font-size: 19.8px !important; }
+  .process-kicker { font-size: 12.1px !important; }
+  .process-step-num { font-size: 12.1px !important; }
+  .qa-answer { font-size: 17.6px !important; }
+  .qa-label { font-size: 12.1px !important; }
+  .qa-question { font-size: 18.7px !important; }
+  .value-body { font-size: 17.6px !important; }
+  .value-num { font-size: 12.1px !important; }
+  .value-title { font-size: 17.6px !important; }
+  .values-header-kicker { font-size: 12.1px !important; }
+}
+  .about-col-title { font-size: 17.6px !important; }
+  .about-hero-body { font-size: 17.6px !important; }
+  .about-hero-kicker { font-size: 12.1px !important; }
+  .about-hero-tagline { font-size: 17.6px !important; }
+  .about-section-heading { font-size: 23.1px !important; }
+  .about-section-kicker { font-size: 12.1px !important; }
+  .contact-item { font-size: 17.6px !important; }
+  .copy-links a { font-size: 14.3px !important; }
+  .copy-text { font-size: 14.3px !important; }
+  .cta-band-body { font-size: 17.6px !important; }
+  .cta-band-btn { font-size: 14.3px !important; }
+  .cta-body { font-size: 17.6px !important; }
+  .cta-btn { font-size: 14.3px !important; }
+  .cta-heading { font-size: 19.8px !important; }
+  .cta-kicker { font-size: 12.1px !important; }
+  .footer-brand-logo { font-size: 27.5px !important; }
+  .footer-col a { font-size: 16.5px !important; }
+  .footer-col-title { font-size: 14.3px !important; }
+  .footer-tagline { font-size: 16.5px !important; }
+  .founder-body { font-size: 17.6px !important; }
+  .founder-cred { font-size: 17.6px !important; }
+  .founder-heading { font-size: 22px !important; }
+  .founder-kicker { font-size: 12.1px !important; }
+  .founder-nav { font-size: 17.6px !important; }
+  .founder-photo-name { font-size: 17.6px !important; }
+  .founder-photo-title { font-size: 17.6px !important; }
+  .founder-value-body { font-size: 17.6px !important; }
+  .founder-value-num { font-size: 12.1px !important; }
+  .founder-value-title { font-size: 17.6px !important; }
+  .founder-who-body { font-size: 17.6px !important; }
+  .founder-who-title { font-size: 17.6px !important; }
+  .hero-consult-btn { font-size: 12.1px !important; }
+  .mission-label { font-size: 12.1px !important; }
+  .mission-stat-label { font-size: 16.5px !important; }
+  .mission-stat-num { font-size: 37.4px !important; }
+  .mission-statement { font-size: 23.1px !important; }
+  .newsletter-form button { font-size: 13.2px !important; }
+  .newsletter-form input { font-size: 13.2px !important; }
+  .newsletter-sub { font-size: 16.5px !important; }
+  .newsletter-title { font-size: 14.3px !important; }
+  .process-body { font-size: 17.6px !important; }
+  .process-heading { font-size: 19.8px !important; }
+  .process-kicker { font-size: 12.1px !important; }
+  .process-step-num { font-size: 12.1px !important; }
+  .qa-answer { font-size: 17.6px !important; }
+  .qa-label { font-size: 12.1px !important; }
+  .qa-question { font-size: 18.7px !important; }
+  .value-body { font-size: 17.6px !important; }
+  .value-num { font-size: 12.1px !important; }
+  .value-title { font-size: 17.6px !important; }
+  .values-header-kicker { font-size: 12.1px !important; }
+}
+  .about-col-title { font-size: 17.6px; }
+  .about-hero-body { font-size: 17.6px; }
+  .about-hero-heading { font-size: clamp(23px, 2.4254vw, 31.1px); }
+  .about-hero-kicker { font-size: 12.1px; }
+  .about-hero-tagline { font-size: 17.6px; }
+  .about-nav-link-text { font-size: 19.8px; }
+  .about-section-heading { font-size: 23.1px; }
+  .about-section-kicker { font-size: 12.1px; }
+  .contact-item { font-size: 17.6px; }
+  .copy-links a { font-size: 14.3px; }
+  .copy-text { font-size: 14.3px; }
+  .cta-band-body { font-size: 17.6px; }
+  .cta-band-btn { font-size: 14.3px; }
+  .cta-body { font-size: 17.6px; }
+  .cta-btn { font-size: 14.3px; }
+  .cta-heading { font-size: 19.8px; }
+  .cta-kicker { font-size: 12.1px; }
+  .footer-brand-logo { font-size: 27.5px; }
+  .footer-col a { font-size: 16.5px; }
+  .footer-col-title { font-size: 14.3px; }
+  .footer-tagline { font-size: 16.5px; }
+  .founder-body { font-size: 17.6px; }
+  .founder-cred { font-size: 17.6px; }
+  .founder-heading { font-size: 22px; }
+  .founder-kicker { font-size: 12.1px; }
+  .founder-nav { font-size: 17.6px; }
+  .founder-photo-name { font-size: 17.6px; }
+  .founder-photo-title { font-size: 17.6px; }
+  .founder-value-body { font-size: 17.6px; }
+  .founder-value-num { font-size: 12.1px; }
+  .founder-value-title { font-size: 17.6px; }
+  .founder-who-body { font-size: 17.6px; }
+  .founder-who-title { font-size: 17.6px; }
+  .hero-consult-btn { font-size: 12.1px; }
+  .mission-label { font-size: 12.1px; }
+  .mission-stat-label { font-size: 16.5px; }
+  .mission-stat-num { font-size: 37.4px; }
+  .mission-statement { font-size: 23.1px; }
+  .mobile-menu .mob-section-title { font-size: 15.8px; }
+  .mobile-menu .mob-sub a { font-size: 16.6px; }
+  .mobile-menu a { font-size: 15.8px; }
+  .newsletter-form button { font-size: 13.2px; }
+  .newsletter-form input { font-size: 13.2px; }
+  .newsletter-sub { font-size: 16.5px; }
+  .newsletter-title { font-size: 14.3px; }
+  .process-body { font-size: 17.6px; }
+  .process-heading { font-size: 19.8px; }
+  .process-kicker { font-size: 12.1px; }
+  .process-step-num { font-size: 12.1px; }
+  .qa-answer { font-size: 17.6px; }
+  .qa-label { font-size: 12.1px; }
+  .qa-question { font-size: 18.7px; }
+  .value-body { font-size: 17.6px; }
+  .value-num { font-size: 12.1px; }
+  .value-title { font-size: 17.6px; }
+  .values-header-kicker { font-size: 12.1px; }
+}
+
+/* page-mobile-fonts */
+@media (max-width: 768px) {
+  .contact-item { font-size: 16.7px; }
+  .copy-text { font-size: 13.5px; }
+  .cta-body { font-size: 16.7px; }
+  .cta-btn { font-size: 13.5px; }
+  .cta-kicker { font-size: 11.4px; }
+  .footer-brand-logo { font-size: 26.1px; }
+  .footer-col-title { font-size: 13.5px; }
+  .footer-tagline { font-size: 15.6px; }
+  .newsletter-sub { font-size: 15.6px; }
+  .newsletter-title { font-size: 13.5px; }
+  .ql-title { font-size: 21.9px; }
+  .stat-text-label { font-size: 13.5px; }
+  .stat-text-num { font-size: 20.8px; }
+  .svc-card-desc { font-size: 16.7px; }
+  .svc-card-tag { font-size: 14.6px; }
+  .svc-kicker { font-size: 13.5px; }
+  .t-author { font-size: 17.7px; }
+  .t-company { font-size: 14.6px; }
+  .t-header { font-size: 13.5px; }
+  .t-quote { font-size: 16.7px; }
+  .t-stars { font-size: 18.8px; }
+  .vc-btn { font-size: 13.5px; }
+  .vc-tagline { font-size: 16.7px; }
+}
+
+/* hero-overflow-fix */
+@media (max-width: 768px) and (orientation: portrait) {
+  .about-hero { overflow: hidden; }
+  .about-hero-right { min-height: 30svh; flex-shrink: 1; }
+  .about-hero-left { overflow: hidden; flex-shrink: 0; }
+  .about-nav-link-text { font-size: 17px; }
+}
+</style>
+</head>
+<body>
+
+<div class="hero-screen">
+    <nav>
+    <a href="index.html" class="nav-logo"><img src="/images/image_05.webp" alt="Vault CPA"></a>
+    <ul class="nav-links">
+      <li><a href="about.html">About Us</a></li>
+      <li>
+        <a href="corporate-services.html">Corporate Services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="dropdown">
+          <a href="review-assurance.html">Review &amp; Assurance</a>
+          <a href="corporate-tax.html">Corporate Tax Services</a>
+          <a href="compilation-bookkeeping.html">Compilation, Accounting &amp; Bookkeeping</a>
+          <a href="outsourced-cfo.html">Outsourced CFO &amp; Controller</a>
+          <a href="corporate-secretarial.html">Corporate Secretarial Services</a>
+          <a href="cloud-accounting.html">Cloud Accounting &amp; Software</a>
+          <a href="financial-planning.html">Financial Planning</a>
+        </div>
+      </li>
+      <li>
+        <a href="personal-services.html">Personal Services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="dropdown">
+          <a href="personal-tax.html">Personal Tax Services</a>
+          <a href="financial-retirement-planning.html">Financial &amp; Retirement Planning</a>
+          <a href="self-employed.html">Self-employed &amp; Contractor Support</a>
+          <a href="estate-wealth-transition.html">Estate &amp; Wealth Transition</a>
+          <a href="cra-representation.html">CRA Representation</a>
+        </div>
+      </li>
+      <li>
+        <a href="industries.html">Industries <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="dropdown">
+          <a href="construction.html">Construction</a>
+          <a href="healthcare.html">Health Care</a>
+          <a href="real-estate.html">Real Estate</a>
+          <a href="professional-services.html">Professional Services</a>
+          <a href="retail.html">Retail</a>
+          <a href="technology.html">Technology</a>
+          <a href="entertainment.html">Entertainment</a>
+          <a href="manufacturing-wholesale.html">Manufacturing &amp; Wholesale</a>
+        </div>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="mob-section-title" href="about.html">About Us</a>
+    <a class="mob-section-title" href="corporate-services.html">Corporate Services</a>
+    <div class="mob-sub">
+      <a href="review-assurance.html">Review &amp; Assurance</a>
+      <a href="corporate-tax.html">Corporate Tax Services</a>
+      <a href="compilation-bookkeeping.html">Compilation, Accounting &amp; Bookkeeping</a>
+      <a href="outsourced-cfo.html">Outsourced CFO &amp; Controller</a>
+      <a href="corporate-secretarial.html">Corporate Secretarial Services</a>
+      <a href="cloud-accounting.html">Cloud Accounting &amp; Software</a>
+      <a href="financial-planning.html">Financial Planning</a>
+    </div>
+    <a class="mob-section-title" href="personal-services.html">Personal Services</a>
+    <div class="mob-sub">
+      <a href="personal-tax.html">Personal Tax Services</a>
+      <a href="financial-retirement-planning.html">Financial &amp; Retirement Planning</a>
+      <a href="self-employed.html">Self-employed &amp; Contractor Support</a>
+      <a href="estate-wealth-transition.html">Estate &amp; Wealth Transition</a>
+      <a href="cra-representation.html">CRA Representation</a>
+    </div>
+    <a class="mob-section-title" href="industries.html">Industries</a>
+    <div class="mob-sub">
+      <a href="construction.html">Construction</a>
+      <a href="healthcare.html">Health Care</a>
+      <a href="real-estate.html">Real Estate</a>
+      <a href="professional-services.html">Professional Services</a>
+      <a href="retail.html">Retail</a>
+      <a href="technology.html">Technology</a>
+      <a href="entertainment.html">Entertainment</a>
+      <a href="manufacturing-wholesale.html">Manufacturing &amp; Wholesale</a>
+    </div>
+    <a class="mob-section-title" href="contact.html">Contact Us</a>
+    <div class="mob-spacer"></div>
+  </div>
+
+  <div class="hero-black">
+    <img class="hero-logo-img" style="mix-blend-mode:lighten;margin-bottom:24px;" src="/images/image_06.webp" alt="Vault CPA">
+    <div class="hero-divider"></div>
+    <div class="hero-tagline">Strength Behind Numbers</div>
+  </div>
+
+  <div class="hero-photo">
+    <img src="/images/image_07.webp" alt="Vault CPA Vancouver office">
+  </div>
+</div>
+
+<div class="vc-wrap">
+  <div class="vc-boxes">
+    <a href="corporate-services.html" class="vc-box">
+      <div><div class="ql-title">Corporate Services</div></div>
+      <svg class="ql-arrow" viewBox="0 0 24 24" fill="none" stroke="#9aa2a8" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <a href="personal-services.html" class="vc-box">
+      <div><div class="ql-title">Personal Services</div></div>
+      <svg class="ql-arrow" viewBox="0 0 24 24" fill="none" stroke="#9aa2a8" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <a href="industries.html" class="vc-box">
+      <div><div class="ql-title">Industries We Serve</div></div>
+      <svg class="ql-arrow" viewBox="0 0 24 24" fill="none" stroke="#9aa2a8" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+  <div class="vc-text">
+    <div class="vc-accent-line"></div>
+    <div class="vc-headline">Financial Clarity.<br><span>Strategic Confidence.</span></div>
+    <p class="vc-tagline">At Vault CPA, we go beyond reporting numbers, delivering insight that drives better decisions. From year-end filings to ongoing CFO support, we bring structure, compliance and strategic clarity to every engagement. We keep our client roster intentionally small so every file gets senior-level attention — not a junior handoff. Whether you're an incorporated professional, a growing business, or an owner planning your next move, we're built to be the firm you can actually reach.</p>
+  </div>
+</div>
+
+<div class="svc-section" id="corporate">
+  <div class="svc-header">
+    <div class="svc-kicker">What we do</div>
+    <div class="svc-heading">Accounting, tax and advisory<br><em>built around you.</em></div>
+  </div>
+  <div class="svc-grid">
+    <div class="svc-card">
+      <div class="svc-card-tag">For Business Owners &amp; Entrepreneurs</div>
+      <p class="svc-card-desc">We handle the full accounting lifecycle for incorporated businesses from year-end filings and corporate tax to bookkeeping, review engagements, and outsourced CFO support. Whether you need compliance handled or strategic financial guidance, we work alongside you as a long-term partner.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-card-tag">For Individuals &amp; Professionals</div>
+      <p class="svc-card-desc">From personal tax returns to retirement and estate planning, we give individuals and self-employed professionals the same precision we bring to corporate clients. We also represent clients before the CRA and help navigate audits, disputes, and complex tax situations with confidence.</p>
+    </div>
+  </div>
+</div>
+
+<div class="cta-wrap" id="personal">
+  <div class="cta-left">
+    <div class="cta-kicker">Get Started</div>
+    <div class="cta-accent"></div>
+    <div class="cta-heading">Clarity starts with one <span>conversation.</span></div>
+    <p class="cta-body">Available year-round, not just at tax season. Let's talk about what we can do for you.</p>
+    <a href="contact.html#contact-form" class="vc-btn">Book a free consultation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+  <div class="cta-image" style="position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;">
+    <img src="/images/image_08.webp" class="cta-bg cta-bg-desktop" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;" alt="">
+    <img src="/images/handshake_mobile.webp" class="cta-bg cta-bg-mobile" style="width:100%;height:100%;object-fit:cover;object-position:center;display:none;" alt="">
+    <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+      <img src="/images/image_06.webp" alt="Vault CPA" style="width:clamp(252.7px, 55%, 469.3px);height:auto;mix-blend-mode:lighten;">
+    </div>
+  </div>
+  </div>
+    
+  </div>
+</div>
+
+<div class="social-proof" id="industries">
+  <div class="stats-col">
+    <div class="stat-row"><div class="stat-text-num">CPA Certified</div><div class="stat-text-label">Chartered Professional Accountant</div></div>
+    <div class="stat-row"><div class="stat-text-num">Vancouver Local</div><div class="stat-text-label">A Boutique Accounting Firm</div></div>
+    <div class="stat-row"><div class="stat-text-num">12+ Industries</div><div class="stat-text-label">Served across BC</div></div>
+    <div class="stat-row"><div class="stat-text-num">5 Star</div><div class="stat-text-label">Client Satisfaction</div></div>
+  </div>
+  <div class="testimonials-col">
+    <div class="t-header">Client Testimonials</div>
+    <div class="testimonial-slide active">
+      <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="t-quote">Working with your team has been one of the best decisions for our clinic. What really stands out is how accessible the staff are. We never feel like we&rsquo;re waiting days for an answer. Whether it&rsquo;s a quick tax question or something more complex, they respond promptly and explain everything in plain English. We highly recommend Vault CPA.</p>
+      <div class="t-author">Pharmalife Pharmacy</div>
+      <div class="t-company">Medical &amp; Pharmacy Client</div>
+    </div>
+    <div class="testimonial-slide">
+      <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="t-quote">The team at Vault CPA helped us set up our accounting system and organize our billing and online payment collection. We&rsquo;ve also received solid guidance on qualifying business expenses, which has given us more confidence in our tax position. Overall, the support has been practical and very helpful.</p>
+      <div class="t-author">Azimi Marketing</div>
+      <div class="t-company">Marketing Agency Client</div>
+    </div>
+    <div class="testimonial-slide">
+      <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="t-quote">Vault CPA set up our accounting and inventory system from the start, which made a big difference in how smoothly we operate. Our bookkeeping and GST filings have always been done on time. Year-end filing and my personal tax advice have also been handled very well. We&rsquo;re very happy with the ongoing service and support.</p>
+      <div class="t-author">ABR Cut Masters</div>
+      <div class="t-company">Manufacturing Client</div>
+    </div>
+    <div class="testimonial-slide">
+      <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="t-quote">We hired Vault CPA to handle the sale of our clinic and were very pleased with how everything was managed. I received clear advice on the Lifetime Capital Gains Deduction, and they ensured the shares qualified properly. They worked closely with our lawyer to keep the closing smooth. We felt confident throughout the process.</p>
+      <div class="t-author">Cure Medical Clinic</div>
+      <div class="t-company">Healthcare Client</div>
+    </div>
+    <div class="t-controls" id="dots"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <a href="index.html" class="footer-brand-logo">Vault <span>CPA</span></a>
+      <p class="footer-tagline">Helping businesses and individuals navigate accounting with precision, insight, and a trusted partner by their side.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Services</div>
+      <a href="corporate-services.html">Corporate Services</a>
+      <a href="personal-services.html">Personal Services</a>
+      <a href="industries.html">Industries We Serve</a>
+    </div>
+          <div class="footer-col">
+      <div class="footer-col-title">Resources</div>
+      <a href="https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services.html" target="_blank" rel="noopener">Client Portal</a>
+      <a href="guides-resources.html">Guides and Publications</a>
+      <a href="https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services.html" target="_blank" rel="noopener">My CRA Account</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Company</div>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <div>
+      <div class="newsletter-title">Newsletter</div>
+      <p class="newsletter-sub">Tax tips, deadlines and financial insight delivered to your inbox.</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Your email address">
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </div>
+    <div class="divider"></div>
+  <div class="contact-item-row"><a href="tel:+16047793604" class="contact-item">604.779.3604</a></div>
+  <div class="divider"></div>
+  <div class="contact-item-row"><a href="mailto:info@vaultcpa.com" class="contact-item">info@vaultcpa.com</a></div>
+  <div class="divider"></div>
+  <div class="contact-item-row"><a href="https://maps.google.com/?q=601-1455+Howe+St+Vancouver+BC+V6Z+1C2" target="_blank" rel="noopener" class="contact-item">601 &ndash; 1455 Howe St., <span class="addr-break"><br class="addr-br">Vancouver BC &nbsp;V6Z 1C2</span></a></div>
+  <div class="divider"></div>
+  <div class="copy-bar">
+    <span class="copy-text">&copy; 2026 Vault CPA. All rights reserved.</span>
+    <div class="copy-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const slides = document.querySelectorAll('.testimonial-slide');
+const dotsContainer = document.getElementById('dots');
+let current = 0;
+slides.forEach((_, i) => {
+  const d = document.createElement('button');
+  d.className = 't-dot' + (i === 0 ? ' active' : '');
+  d.onclick = () => goTo(i);
+  dotsContainer.appendChild(d);
+});
+function goTo(n) {
+  slides[current].classList.remove('active');
+  document.querySelectorAll('.t-dot')[current].classList.remove('active');
+  current = (n + slides.length) % slides.length;
+  slides[current].classList.add('active');
+  document.querySelectorAll('.t-dot')[current].classList.add('active');
+}
+setInterval(() => goTo(current + 1), 4000);
+
+// Swipe support
+(function(){
+  var col = document.querySelector('.testimonials-col');
+  if (!col) return;
+  var startX = 0;
+  col.addEventListener('touchstart', function(e){ startX = e.touches[0].clientX; }, { passive: true });
+  col.addEventListener('touchend', function(e){
+    var diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) goTo(current + (diff > 0 ? 1 : -1));
+  }, { passive: true });
+})();
+</script>
+
+
+<script>
+(function() {
+  function initReveal() {
+    document.querySelectorAll('[data-aos]').forEach(function(el) {
+      el.removeAttribute('data-aos');
+      el.removeAttribute('data-aos-duration');
+      el.removeAttribute('data-aos-delay');
+      el.classList.add('reveal');
+    });
+    function check() {
+      document.querySelectorAll('.reveal:not(.visible)').forEach(function(el) {
+        if (el.getBoundingClientRect().top < window.innerHeight - 40) {
+          el.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', check, { passive: true });
+    check();
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initReveal);
+  } else {
+    initReveal();
+  }
+})();
+</script>
+
+<script>
+(function(){
+  var btn = document.getElementById('hamburger');
+  var menu = document.getElementById('mobileMenu');
+  if(!btn || !menu) return;
+  var scrollY = 0;
+  function openMenu() {
+    scrollY = window.scrollY || window.pageYOffset;
+    document.body.style.top = '-' + scrollY + 'px';
+    document.body.classList.add('menu-open');
+    menu.classList.add('open');
+  }
+  function closeMenu() {
+    menu.classList.remove('open');
+    document.body.classList.remove('menu-open');
+    document.body.style.top = '';
+    window.scrollTo(0, scrollY);
+  }
+  btn.addEventListener('click', function(){
+    if (menu.classList.contains('open')) { closeMenu(); } else { openMenu(); }
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', closeMenu);
+  });
+})();
+</script>
+</body>
+</html>

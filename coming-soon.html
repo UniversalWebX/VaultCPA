@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coming Soon — Vault CPA | Vancouver, BC</title>
+<meta name="description" content="This industry page is coming soon. Vault CPA provides specialized accounting services for businesses across BC. Contact us to discuss your industry's needs.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0a0c0d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { overflow-x: hidden; }
+body { font-family: 'Raleway', sans-serif; background: #0a0c0d; overflow-x: hidden; min-height: 100vh; display: flex; flex-direction: column; }
+
+nav { background: #0a0c0d; border-bottom: 1px solid #2c3235; display: flex; align-items: center; justify-content: space-between; padding: 0 6vw; height: 34px; position: relative; z-index: 100; }
+.nav-logo { display: flex; align-items: flex-start; height: 100%; }
+.nav-logo img { height: 24.8px; width: auto; display: block; object-fit: contain; mix-blend-mode: lighten; }
+.nav-links { display: flex; align-items: center; gap: 10px; list-style: none; height: 100%; }
+.nav-links > li { position: relative; height: 100%; display: flex; align-items: center; }
+.nav-links > li > a { font-family: 'Source Sans 3', sans-serif; font-size: 11.4px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #7a8690; text-decoration: none; padding: 6px 14px; transition: color 0.2s; display: flex; align-items: center; gap: 5px; white-space: nowrap; }
+.nav-links > li > a:hover { color: #fff; }
+.nav-links > li > a svg { width: 10px; height: 10px; transition: transform 0.2s; }
+.nav-links > li:hover > a svg { transform: rotate(180deg); }
+.dropdown { display: none; position: absolute; top: 100%; left: 0; background: #0e1012; border: 1px solid #2c3235; border-top: 1px solid #3a4248; min-width: 240px; z-index: 200; }
+.nav-links > li:hover .dropdown { display: block; }
+.dropdown a { display: flex; align-items: center; justify-content: space-between; padding: 7px 18px; color: #657580; font-family: 'Source Sans 3', sans-serif; font-size: 12.3px; font-weight: 400; text-decoration: none; border-bottom: 1px solid #1e2022; transition: color 0.15s, padding-left 0.15s; }
+.dropdown a:last-child { border-bottom: none; }
+.dropdown a:hover { color: #fff; background: rgba(255,255,255,0.04); padding-left: 22px; }
+.nav-hamburger { display: none; }
+.mobile-menu { display: none; }
+
+.page-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 6vw;
+  background: #0a0c0d;
+  background-image: linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,0.012) 1px, transparent 1px);
+  background-size: 80px 80px;
+  text-align: center;
+}
+.cs-kicker {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 10.4px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #6b7580;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+.cs-kicker::before, .cs-kicker::after {
+  content: '';
+  display: block;
+  width: 22px;
+  height: 1px;
+  background: #6b7580;
+}
+.cs-heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(26.5px, 3.3166vw, 45.5px);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+.cs-heading span { color: #657580; font-weight: 300; }
+.cs-accent { width: 32px; height: 1px; background: #2c3235; margin: 24px auto; }
+.cs-body {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 15.2px;
+  font-weight: 300;
+  color: #7a8690;
+  line-height: 1.7;
+  max-width: 520px;
+  margin-bottom: 36px;
+}
+.cs-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #c4cdd0;
+  color: #0a0c0d;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10.4px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 28px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.2s;
+  margin-bottom: 16px;
+}
+.cs-btn:hover { background: #fff; }
+.cs-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 12.3px;
+  font-weight: 400;
+  color: #3a4248;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.cs-back:hover { color: #657580; }
+
+footer { background: #111315; border-top: 1px solid #2c3235; padding: 28px 6vw; }
+.footer-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.footer-brand { font-family: 'Raleway', sans-serif; font-size: 17.1px; font-weight: 800; color: #fff; text-decoration: none; }
+.footer-brand span { font-weight: 300; color: #7a8690; }
+.footer-links { display: flex; gap: 20px; }
+.footer-links a { font-size: 12.3px; color: #3a4248; text-decoration: none; font-family: 'Source Sans 3', sans-serif; transition: color 0.2s; }
+.footer-links a:hover { color: #657580; }
+.copy-text { font-size: 12.3px; color: #3a4248; font-family: 'Source Sans 3', sans-serif; }
+
+@media (max-width: 768px) {
+  .nav-links { display: none !important; }
+  .nav-hamburger { display: flex; flex-direction: column; justify-content: center; gap: 6px; cursor: pointer; padding: 6px; background: none; border: none; z-index: 300; }
+  .nav-hamburger span { display: block; width: 22px; height: 2.4px; background: #c4cdd0; border-radius: 2px; }
+  .mobile-menu { display: none; position: fixed; top: 34px; left: 0; right: 0; bottom: 0; background: #0e1012; z-index: 9999; overflow-y: auto; }
+  .mobile-menu.open { display: block; }
+  body.menu-open { overflow: hidden; position: fixed; width: 100%; }
+  .mobile-menu a { display: block; padding: 14px 6vw; font-family: 'Source Sans 3', sans-serif; font-size: 17.5px; color: #657580; text-decoration: none; border-bottom: 1px solid #1e2022; }
+  .mobile-menu .mob-section-title { display: block; padding: 16px 6vw 8px; font-family: 'Source Sans 3', sans-serif; font-size: 17.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #dde2e6; border-bottom: 1px solid #2c3235; background: #161819; text-decoration: none; }
+  .mobile-menu .mob-sub a { padding-left: calc(6vw + 16px); color: #7a8690; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+@media (min-width: 769px) {
+  .nav-hamburger { display: none; }
+  .mobile-menu { display: none !important; }
+}
+
+
+
+ay: none !important; }
+}
+
+
+
+  .about-col-title { font-size: 17.6px !important; }
+  .about-hero-body { font-size: 17.6px !important; }
+  .about-hero-kicker { font-size: 12.1px !important; }
+  .about-hero-tagline { font-size: 17.6px !important; }
+  .about-section-heading { font-size: 23.1px !important; }
+  .about-section-kicker { font-size: 12.1px !important; }
+  .contact-item { font-size: 17.6px !important; }
+  .copy-links a { font-size: 14.3px !important; }
+  .copy-text { font-size: 14.3px !important; }
+  .cta-band-body { font-size: 17.6px !important; }
+  .cta-band-btn { font-size: 14.3px !important; }
+  .cta-body { font-size: 17.6px !important; }
+  .cta-btn { font-size: 14.3px !important; }
+  .cta-heading { font-size: 19.8px !important; }
+  .cta-kicker { font-size: 12.1px !important; }
+  .footer-brand-logo { font-size: 27.5px !important; }
+  .footer-col a { font-size: 16.5px !important; }
+  .footer-col-title { font-size: 14.3px !important; }
+  .footer-tagline { font-size: 16.5px !important; }
+  .founder-body { font-size: 17.6px !important; }
+  .founder-cred { font-size: 17.6px !important; }
+  .founder-heading { font-size: 22px !important; }
+  .founder-kicker { font-size: 12.1px !important; }
+  .founder-nav { font-size: 17.6px !important; }
+  .founder-photo-name { font-size: 17.6px !important; }
+  .founder-photo-title { font-size: 17.6px !important; }
+  .founder-value-body { font-size: 17.6px !important; }
+  .founder-value-num { font-size: 12.1px !important; }
+  .founder-value-title { font-size: 17.6px !important; }
+  .founder-who-body { font-size: 17.6px !important; }
+  .founder-who-title { font-size: 17.6px !important; }
+  .hero-consult-btn { font-size: 12.1px !important; }
+  .mission-label { font-size: 12.1px !important; }
+  .mission-stat-label { font-size: 16.5px !important; }
+  .mission-stat-num { font-size: 37.4px !important; }
+  .mission-statement { font-size: 23.1px !important; }
+  .newsletter-form button { font-size: 13.2px !important; }
+  .newsletter-form input { font-size: 13.2px !important; }
+  .newsletter-sub { font-size: 16.5px !important; }
+  .newsletter-title { font-size: 14.3px !important; }
+  .process-body { font-size: 17.6px !important; }
+  .process-heading { font-size: 19.8px !important; }
+  .process-kicker { font-size: 12.1px !important; }
+  .process-step-num { font-size: 12.1px !important; }
+  .qa-answer { font-size: 17.6px !important; }
+  .qa-label { font-size: 12.1px !important; }
+  .qa-question { font-size: 18.7px !important; }
+  .value-body { font-size: 17.6px !important; }
+  .value-num { font-size: 12.1px !important; }
+  .value-title { font-size: 17.6px !important; }
+  .values-header-kicker { font-size: 12.1px !important; }
+}
+  .about-col-title { font-size: 17.6px !important; }
+  .about-hero-body { font-size: 17.6px !important; }
+  .about-hero-kicker { font-size: 12.1px !important; }
+  .about-hero-tagline { font-size: 17.6px !important; }
+  .about-section-heading { font-size: 23.1px !important; }
+  .about-section-kicker { font-size: 12.1px !important; }
+  .contact-item { font-size: 17.6px !important; }
+  .copy-links a { font-size: 14.3px !important; }
+  .copy-text { font-size: 14.3px !important; }
+  .cta-band-body { font-size: 17.6px !important; }
+  .cta-band-btn { font-size: 14.3px !important; }
+  .cta-body { font-size: 17.6px !important; }
+  .cta-btn { font-size: 14.3px !important; }
+  .cta-heading { font-size: 19.8px !important; }
+  .cta-kicker { font-size: 12.1px !important; }
+  .footer-brand-logo { font-size: 27.5px !important; }
+  .footer-col a { font-size: 16.5px !important; }
+  .footer-col-title { font-size: 14.3px !important; }
+  .footer-tagline { font-size: 16.5px !important; }
+  .founder-body { font-size: 17.6px !important; }
+  .founder-cred { font-size: 17.6px !important; }
+  .founder-heading { font-size: 22px !important; }
+  .founder-kicker { font-size: 12.1px !important; }
+  .founder-nav { font-size: 17.6px !important; }
+  .founder-photo-name { font-size: 17.6px !important; }
+  .founder-photo-title { font-size: 17.6px !important; }
+  .founder-value-body { font-size: 17.6px !important; }
+  .founder-value-num { font-size: 12.1px !important; }
+  .founder-value-title { font-size: 17.6px !important; }
+  .founder-who-body { font-size: 17.6px !important; }
+  .founder-who-title { font-size: 17.6px !important; }
+  .hero-consult-btn { font-size: 12.1px !important; }
+  .mission-label { font-size: 12.1px !important; }
+  .mission-stat-label { font-size: 16.5px !important; }
+  .mission-stat-num { font-size: 37.4px !important; }
+  .mission-statement { font-size: 23.1px !important; }
+  .newsletter-form button { font-size: 13.2px !important; }
+  .newsletter-form input { font-size: 13.2px !important; }
+  .newsletter-sub { font-size: 16.5px !important; }
+  .newsletter-title { font-size: 14.3px !important; }
+  .process-body { font-size: 17.6px !important; }
+  .process-heading { font-size: 19.8px !important; }
+  .process-kicker { font-size: 12.1px !important; }
+  .process-step-num { font-size: 12.1px !important; }
+  .qa-answer { font-size: 17.6px !important; }
+  .qa-label { font-size: 12.1px !important; }
+  .qa-question { font-size: 18.7px !important; }
+  .value-body { font-size: 17.6px !important; }
+  .value-num { font-size: 12.1px !important; }
+  .value-title { font-size: 17.6px !important; }
+  .values-header-kicker { font-size: 12.1px !important; }
+}
+  .about-col-title { font-size: 17.6px; }
+  .about-hero-body { font-size: 17.6px; }
+  .about-hero-heading { font-size: clamp(23px, 2.4254vw, 31.1px); }
+  .about-hero-kicker { font-size: 12.1px; }
+  .about-hero-tagline { font-size: 17.6px; }
+  .about-nav-link-text { font-size: 19.8px; }
+  .about-section-heading { font-size: 23.1px; }
+  .about-section-kicker { font-size: 12.1px; }
+  .contact-item { font-size: 17.6px; }
+  .copy-links a { font-size: 14.3px; }
+  .copy-text { font-size: 14.3px; }
+  .cta-band-body { font-size: 17.6px; }
+  .cta-band-btn { font-size: 14.3px; }
+  .cta-body { font-size: 17.6px; }
+  .cta-btn { font-size: 14.3px; }
+  .cta-heading { font-size: 19.8px; }
+  .cta-kicker { font-size: 12.1px; }
+  .footer-brand-logo { font-size: 27.5px; }
+  .footer-col a { font-size: 16.5px; }
+  .footer-col-title { font-size: 14.3px; }
+  .footer-tagline { font-size: 16.5px; }
+  .founder-body { font-size: 17.6px; }
+  .founder-cred { font-size: 17.6px; }
+  .founder-heading { font-size: 22px; }
+  .founder-kicker { font-size: 12.1px; }
+  .founder-nav { font-size: 17.6px; }
+  .founder-photo-name { font-size: 17.6px; }
+  .founder-photo-title { font-size: 17.6px; }
+  .founder-value-body { font-size: 17.6px; }
+  .founder-value-num { font-size: 12.1px; }
+  .founder-value-title { font-size: 17.6px; }
+  .founder-who-body { font-size: 17.6px; }
+  .founder-who-title { font-size: 17.6px; }
+  .hero-consult-btn { font-size: 12.1px; }
+  .mission-label { font-size: 12.1px; }
+  .mission-stat-label { font-size: 16.5px; }
+  .mission-stat-num { font-size: 37.4px; }
+  .mission-statement { font-size: 23.1px; }
+  .mobile-menu .mob-section-title { font-size: 15.8px; }
+  .mobile-menu .mob-sub a { font-size: 16.6px; }
+  .mobile-menu a { font-size: 15.8px; }
+  .newsletter-form button { font-size: 13.2px; }
+  .newsletter-form input { font-size: 13.2px; }
+  .newsletter-sub { font-size: 16.5px; }
+  .newsletter-title { font-size: 14.3px; }
+  .process-body { font-size: 17.6px; }
+  .process-heading { font-size: 19.8px; }
+  .process-kicker { font-size: 12.1px; }
+  .process-step-num { font-size: 12.1px; }
+  .qa-answer { font-size: 17.6px; }
+  .qa-label { font-size: 12.1px; }
+  .qa-question { font-size: 18.7px; }
+  .value-body { font-size: 17.6px; }
+  .value-num { font-size: 12.1px; }
+  .value-title { font-size: 17.6px; }
+  .values-header-kicker { font-size: 12.1px; }
+}
+
+/* page-mobile-fonts */
+@media (max-width: 768px) {
+  .copy-text { font-size: 13.5px; }
+  .cs-back { font-size: 13.5px; }
+  .cs-body { font-size: 16.7px; }
+  .cs-btn { font-size: 11.4px; }
+  .cs-kicker { font-size: 11.4px; }
+  .footer-brand { font-size: 18.8px; }
+}
+
+/* hero-overflow-fix */
+@media (max-width: 768px) and (orientation: portrait) {
+  .about-hero { overflow: hidden; }
+  .about-hero-right { min-height: 30svh; flex-shrink: 1; }
+  .about-hero-left { overflow: hidden; flex-shrink: 0; }
+  .about-nav-link-text { font-size: 17px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="/images/image_05.webp" alt="Vault CPA"></a>
+  <ul class="nav-links">
+    <li><a href="about.html">About Us</a></li>
+    <li>
+      <a href="corporate-services.html">Corporate Services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+      <div class="dropdown">
+        <a href="review-assurance.html">Review &amp; Assurance</a>
+        <a href="corporate-tax.html">Corporate Tax Services</a>
+        <a href="compilation-bookkeeping.html">Compilation, Accounting &amp; Bookkeeping</a>
+        <a href="outsourced-cfo.html">Outsourced CFO &amp; Controller</a>
+        <a href="corporate-secretarial.html">Corporate Secretarial Services</a>
+        <a href="cloud-accounting.html">Cloud Accounting &amp; Software</a>
+        <a href="financial-planning.html">Financial Planning</a>
+      </div>
+    </li>
+    <li>
+      <a href="personal-services.html">Personal Services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+      <div class="dropdown">
+        <a href="personal-tax.html">Personal Tax Services</a>
+        <a href="financial-retirement-planning.html">Financial &amp; Retirement Planning</a>
+        <a href="self-employed.html">Self-employed &amp; Contractor Support</a>
+        <a href="estate-wealth-transition.html">Estate &amp; Wealth Transition</a>
+        <a href="cra-representation.html">CRA Representation</a>
+      </div>
+    </li>
+    <li>
+      <a href="industries.html">Industries <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+      <div class="dropdown">
+        <a href="construction.html">Construction</a>
+        <a href="healthcare.html">Health Care</a>
+        <a href="real-estate.html">Real Estate</a>
+        <a href="professional-services.html">Professional Services</a>
+        <a href="retail.html">Retail</a>
+        <a href="technology.html">Technology</a>
+        <a href="entertainment.html">Entertainment</a>
+        <a href="manufacturing-wholesale.html">Manufacturing &amp; Wholesale</a>
+      </div>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a class="mob-section-title" href="about.html">About Us</a>
+  <a class="mob-section-title" href="industries.html">Industries</a>
+  <div class="mob-sub">
+    <a href="construction.html">Construction</a>
+    <a href="healthcare.html">Health Care</a>
+    <a href="real-estate.html">Real Estate</a>
+    <a href="professional-services.html">Professional Services</a>
+    <a href="retail.html">Retail</a>
+    <a href="technology.html">Technology</a>
+    <a href="entertainment.html">Entertainment</a>
+    <a href="manufacturing-wholesale.html">Manufacturing &amp; Wholesale</a>
+  </div>
+  <a class="mob-section-title" href="contact.html">Contact Us</a>
+</div>
+
+<div class="page-wrap">
+  <div class="cs-kicker">Coming Soon</div>
+  <h1 class="cs-heading">This page is<br><span>on the way.</span></h1>
+  <div class="cs-accent"></div>
+  <p class="cs-body">We are building out dedicated pages for each industry we serve. In the meantime, reach out directly and we will walk you through how we work with businesses in your sector.</p>
+  <a href="contact.html#contact-form" class="cs-btn">
+    Book a Free Consultation
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </a><br>
+  <a href="industries.html" class="cs-back">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    Back to Industries
+  </a>
+</div>
+
+<footer>
+  <div class="footer-bottom">
+    <a href="index.html" class="footer-brand">Vault <span>CPA</span></a>
+    <span class="copy-text">&copy; 2026 Vault CPA. All rights reserved.</span>
+    <div class="footer-links">
+      <a href="contact.html">Contact</a>
+      <a href="#">Privacy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+if(hamburger && mobileMenu){
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+    document.body.classList.toggle('menu-open');
+  });
+}
+</script>
+</body>
+</html>

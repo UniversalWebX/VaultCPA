@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vault CPA — Chartered Professional Accountant | Vancouver, BC</title>
+<meta name="description" content="Vault CPA is a boutique chartered professional accounting firm in Vancouver, BC. Corporate tax, bookkeeping, review engagements, CFO support, and personal tax. Senior CPA on every file.">
+<meta name="keywords" content="Vancouver CPA, chartered professional accountant Vancouver, corporate accounting Vancouver, personal tax Vancouver, bookkeeping Vancouver, outsourced CFO Vancouver, boutique accounting firm BC">
+<meta name="author" content="Vault CPA">
+<link rel="canonical" href="https://vaultcpa.com/">
+<meta name="theme-color" content="#0a0c0d">
+<meta name="geo.region" content="CA-BC">
+<meta name="geo.placename" content="Vancouver, British Columbia">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vaultcpa.com/">
+<meta property="og:title" content="Vault CPA — Chartered Professional Accountant | Vancouver, BC">
+<meta property="og:description" content="Vault CPA is a boutique CPA firm in Vancouver, BC.">
+<meta property="og:site_name" content="Vault CPA">
+<meta property="og:locale" content="en_CA">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["AccountingService","LocalBusiness"],"name":"Vault CPA","url":"https://vaultcpa.com","telephone":"+16047793604","email":"info@vaultcpa.com","address":{"@type":"PostalAddress","streetAddress":"601-1455 Howe St.","addressLocality":"Vancouver","addressRegion":"BC","postalCode":"V6Z 1C2","addressCountry":"CA"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+/* ─── Reset & Base ─────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { overflow-x: hidden; scroll-behavior: smooth; }
+body { font-family: 'Raleway', sans-serif; background: #161819; overflow-x: hidden; }
+
+/* ─── CSS Variables ────────────────────────────────────────────── */
+:root {
+  --col-bg-deep: #0a0c0d;
+  --col-bg-mid: #161819;
+  --col-bg-light: #202426;
+  --col-border: #2c3235;
+  --col-border-light: #3a4248;
+  --col-text-primary: #f0f2f3;
+  --col-text-secondary: #c4cdd0;
+  --col-text-muted: #9aa2a8;
+  --col-text-dim: #7a8690;
+  --col-accent: #c4cdd0;
+  --col-gold: #a89060;
+  --easing: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+}
+
+/* ─── Keyframes ────────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes lineGrow {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.02); }
+}
+@keyframes gridSlide {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 0.6; transform: translateY(0); }
+}
+@keyframes blink { 0%, 49.9% { opacity: 0; } 50%, 100% { opacity: 1; } }
+@keyframes counterUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes borderReveal {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0% 0 0); }
+}
+@keyframes rotateIn {
+  from { opacity: 0; transform: rotate(-2deg) translateY(16px); }
+  to   { opacity: 1; transform: rotate(0) translateY(0); }
+}
+
+/* ─── Reveal on Scroll ─────────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.8s var(--easing), transform 0.8s var(--easing);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-32px);
+  transition: opacity 0.8s var(--easing), transform 0.8s var(--easing);
+}
+.reveal-left.visible { opacity: 1; transform: translateX(0); }
+.reveal-right {
+  opacity: 0;
+  transform: translateX(32px);
+  transition: opacity 0.8s var(--easing), transform 0.8s var(--easing);
+}
+.reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+/* ─── Nav ──────────────────────────────────────────────────────── */
+nav {
+  flex-shrink: 0;
+  background: rgba(10, 12, 13, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--col-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6vw;
+  height: 42px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: background 0.3s, border-color 0.3s;
+}
+nav.scrolled {
+  background: rgba(10, 12, 13, 0.98);
+  border-color: rgba(44, 50, 53, 0.8);
+}
+.nav-logo { display: flex; align-items: center; height: 100%; }
+.nav-logo img { height: 22px; width: auto; display: block; object-fit: contain; mix-blend-mode: lighten; }
+.nav-links { display: flex; align-items: center; gap: 2px; list-style: none; height: 100%; }
+.nav-links > li { position: relative; height: 100%; display: flex; align-items: center; }
+.nav-links > li > a {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--col-text-muted);
+  text-decoration: none;
+  padding: 6px 12px;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+  position: relative;
+}
+.nav-links > li > a::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: 12px;
+  right: 12px;
+  height: 1px;
+  background: var(--col-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s var(--easing);
+}
+.nav-links > li > a:hover { color: #fff; }
+.nav-links > li > a:hover::after { transform: scaleX(1); }
+.nav-links > li > a svg { width: 9px; height: 9px; transition: transform 0.2s; }
+.nav-links > li:hover > a svg { transform: rotate(180deg); }
+.dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 0;
+  background: rgba(14, 16, 18, 0.97);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--col-border);
+  border-top: 1px solid var(--col-border-light);
+  min-width: 248px;
+  z-index: 200;
+  animation: fadeUp 0.2s var(--easing);
+}
+.nav-links > li:hover .dropdown { display: block; }
+.dropdown a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 18px;
+  color: var(--col-text-muted);
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(44,50,53,0.5);
+  transition: color 0.15s, padding-left 0.2s var(--easing), background 0.15s;
+}
+.dropdown a:last-child { border-bottom: none; }
+.dropdown a:hover { color: #fff; background: rgba(255,255,255,0.04); padding-left: 24px; }
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+  padding: 6px;
+  background: none;
+  border: none;
+  z-index: 300;
+}
+.nav-hamburger span {
+  display: block;
+  width: 24px;
+  height: 1.5px;
+  background: var(--col-text-secondary);
+  border-radius: 2px;
+  transition: background 0.2s, transform 0.3s var(--easing), opacity 0.2s;
+  transform-origin: center;
+}
+.nav-hamburger.open span:nth-child(1) { transform: translateY(5.5px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-5.5px) rotate(-45deg); }
+.mobile-menu { display: none; }
+
+/* ─── Hero ─────────────────────────────────────────────────────── */
+.hero-screen {
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  background: var(--col-bg-deep);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Animated grid background */
+.hero-grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 72px 72px;
+  animation: gridSlide 1.8s var(--easing) both;
+  pointer-events: none;
+}
+
+/* Ambient glow */
+.hero-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(196,205,208,0.04) 0%, transparent 65%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  pointer-events: none;
+  animation: pulse 6s ease-in-out infinite;
+}
+
+.hero-black {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  padding-top: 42px;
+}
+
+.hero-logo-img {
+  width: clamp(220px, 30vw, 420px);
+  height: auto;
+  display: block;
+  mix-blend-mode: lighten;
+  margin-bottom: 20px;
+  animation: fadeUp 1s 0.3s var(--easing) both;
+}
+
+.hero-tagline {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: clamp(0.72rem, 0.95vw, 0.88rem);
+  font-weight: 600;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--col-text-dim);
+  animation: fadeIn 1.2s 0.7s both;
+  position: relative;
+}
+.hero-tagline::before, .hero-tagline::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 28px;
+  height: 1px;
+  background: var(--col-border-light);
+}
+.hero-tagline::before { right: calc(100% + 14px); }
+.hero-tagline::after  { left: calc(100% + 14px); }
+
+/* Scroll indicator */
+.hero-scroll-hint {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  animation: fadeIn 1.5s 1.2s both;
+  cursor: pointer;
+  z-index: 2;
+}
+.hero-scroll-hint span {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--col-text-dim);
+}
+.scroll-line {
+  width: 1px;
+  height: 32px;
+  background: linear-gradient(to bottom, var(--col-border-light), transparent);
+  animation: blink 1.8s 1.5s ease-in-out infinite;
+}
+
+.hero-photo {
+  flex-shrink: 0;
+  height: 33vh;
+  min-height: 180px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.hero-photo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to bottom, var(--col-bg-deep), transparent);
+  z-index: 2;
+  pointer-events: none;
+}
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+  display: block;
+  transition: transform 0.6s var(--easing);
+}
+
+/* ─── Quicklinks ───────────────────────────────────────────────── */
+.vc-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--col-bg-mid);
+  border-bottom: 1px solid var(--col-border);
+  min-height: 420px;
+}
+.vc-boxes { display: flex; flex-direction: column; justify-content: center; height: 100%; }
+.vc-box {
+  background: var(--col-bg-mid);
+  border: 1px solid var(--col-border);
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  gap: 12px;
+  cursor: pointer;
+  transition: background 0.35s var(--easing), border-color 0.35s;
+  position: relative;
+  overflow: hidden;
+}
+.vc-box::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--col-accent);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.35s var(--easing);
+}
+.vc-box:hover { background: #202426; }
+.vc-box:hover::before { transform: scaleY(1); }
+.vc-box:hover .ql-title { color: #f0f2f3; }
+.vc-box:hover .ql-arrow { opacity: 1; transform: translateX(4px); }
+.vc-box:last-child { border-bottom: none; }
+.vc-box:nth-child(2) { padding: 18px 6vw; min-height: 58px; }
+.vc-box:nth-child(1) { padding: 40px 6vw 18px; min-height: 90px; flex: 1; align-items: flex-end; }
+.vc-box:nth-child(3) { padding: 18px 6vw 40px; min-height: 90px; flex: 1; align-items: flex-start; }
+.ql-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--col-text-secondary);
+  transition: color 0.25s;
+  letter-spacing: -0.01em;
+}
+.ql-arrow {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  opacity: 0.4;
+  transition: opacity 0.25s, transform 0.35s var(--easing);
+}
+.vc-text {
+  padding: 40px 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid var(--col-border);
+}
+.vc-accent-line {
+  width: 24px;
+  height: 1px;
+  background: var(--col-border-light);
+  margin-bottom: 14px;
+  transform-origin: left;
+  animation: lineGrow 0.8s 0.4s var(--easing) both;
+}
+.vc-headline {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(18px, 1.8vw, 24px);
+  font-weight: 800;
+  color: var(--col-text-primary);
+  line-height: 1.1;
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
+}
+.vc-headline span { color: var(--col-text-muted); font-weight: 300; }
+.vc-tagline {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--col-text-secondary);
+  line-height: 1.62;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+.vc-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--col-accent);
+  color: #161819;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s, transform 0.2s var(--easing), box-shadow 0.2s;
+}
+.vc-btn:hover {
+  background: #fff;
+  color: var(--col-bg-deep);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+.vc-btn svg { width: 13px; height: 13px; }
+
+/* ─── Services Section ─────────────────────────────────────────── */
+.svc-section {
+  background: var(--col-bg-light);
+  border-bottom: 1px solid var(--col-border);
+  min-height: 420px;
+}
+.svc-header { padding: 64px 6vw 48px; }
+.svc-kicker {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--col-text-muted);
+  margin-bottom: 16px;
+  font-family: 'Source Sans 3', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.svc-kicker::before {
+  content: '';
+  width: 20px;
+  height: 1px;
+  background: var(--col-border-light);
+}
+.svc-heading {
+  font-size: clamp(18px, 1.8vw, 24px);
+  font-weight: 800;
+  color: var(--col-text-primary);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  max-width: 680px;
+}
+.svc-heading em { font-style: normal; color: var(--col-text-muted); font-weight: 300; }
+.svc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--col-border);
+}
+.svc-card {
+  background: var(--col-bg-light);
+  padding: 36px 6vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.35s;
+}
+.svc-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(196,205,208,0.2), transparent);
+  transform: scaleX(0);
+  transition: transform 0.5s var(--easing);
+}
+.svc-card:hover { background: #262a2d; }
+.svc-card:hover::after { transform: scaleX(1); }
+.svc-card-tag {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--col-text-primary);
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--col-border);
+}
+.svc-card-desc {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--col-text-secondary);
+  line-height: 1.62;
+  flex: 1;
+}
+.svc-card-link {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--col-text-muted);
+  text-decoration: none;
+  transition: color 0.2s, gap 0.25s var(--easing);
+}
+.svc-card-link:hover { color: var(--col-text-primary); gap: 10px; }
+.svc-card-link svg { width: 12px; height: 12px; }
+
+/* ─── CTA Section ──────────────────────────────────────────────── */
+.cta-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--col-border);
+  min-height: 420px;
+}
+.cta-left {
+  padding: 52px 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: var(--col-bg-deep);
+  border-right: 1px solid var(--col-border);
+}
+.cta-kicker {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--col-text-muted);
+  margin-bottom: 14px;
+  font-family: 'Source Sans 3', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.cta-kicker::before {
+  content: '';
+  width: 16px;
+  height: 1px;
+  background: var(--col-border-light);
+}
+.cta-accent { width: 28px; height: 1px; background: var(--col-border-light); margin-bottom: 18px; }
+.cta-heading {
+  font-size: clamp(18px, 1.8vw, 24px);
+  font-weight: 800;
+  color: var(--col-text-primary);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+.cta-heading span { color: var(--col-text-muted); font-weight: 300; }
+.cta-body {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--col-text-secondary);
+  line-height: 1.62;
+  margin-bottom: 32px;
+}
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--col-accent);
+  color: var(--col-bg-deep);
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 10px 28px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background 0.2s, transform 0.2s var(--easing), box-shadow 0.2s;
+}
+.cta-btn:hover {
+  background: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.4);
+}
+.cta-btn svg { width: 15px; height: 15px; transition: transform 0.25s var(--easing); }
+.cta-btn:hover svg { transform: translateX(3px); }
+.cta-image {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cta-image img.cta-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.8s var(--easing);
+}
+.cta-image:hover img.cta-bg { transform: scale(1.03); }
+
+/* ─── Stats + Testimonials ─────────────────────────────────────── */
+.social-proof {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--col-border);
+  min-height: 420px;
+}
+.stats-col {
+  background: var(--col-border);
+  padding: 48px 6vw;
+  border-right: 1px solid var(--col-border-light);
+  display: flex;
+  flex-direction: column;
+}
+.stat-row {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--col-border-light);
+  position: relative;
+  overflow: hidden;
+}
+.stat-row:last-child { border-bottom: none; }
+.stat-row::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--col-accent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.stat-row:hover::before { opacity: 0.5; }
+.stat-text-num {
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--col-text-primary);
+  line-height: 0.9;
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+.stat-text-label {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--col-text-secondary);
+}
+.testimonials-col {
+  background: var(--col-bg-light);
+  padding: 48px 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.t-header {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--col-text-muted);
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.t-header::before { content: ''; width: 16px; height: 1px; background: var(--col-border-light); }
+.testimonial-slide { display: none; }
+.testimonial-slide.active {
+  display: block;
+  animation: fadeUp 0.5s var(--easing);
+}
+.t-stars {
+  color: var(--col-text-secondary);
+  font-size: 15px;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+  opacity: 0.7;
+}
+.t-quote {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--col-text-secondary);
+  line-height: 1.65;
+  font-style: italic;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 18px;
+}
+.t-quote::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 4px;
+  width: 2px;
+  background: var(--col-border-light);
+}
+.t-author {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--col-text-primary);
+}
+.t-company {
+  font-size: 12px;
+  color: var(--col-text-muted);
+  margin-top: 2px;
+  font-family: 'Source Sans 3', sans-serif;
+}
+.t-controls { display: flex; gap: 8px; margin-top: 24px; }
+.t-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--col-border-light);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s, transform 0.2s;
+}
+.t-dot.active { background: var(--col-text-muted); transform: scale(1.3); }
+
+/* ─── Footer ───────────────────────────────────────────────────── */
+footer { background: #0d0f10; border-top: 1px solid var(--col-border); padding: 56px 6vw 48px; }
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr 1.4fr;
+  gap: 40px;
+  padding-bottom: 48px;
+}
+.footer-brand-logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--col-text-primary);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 14px;
+  letter-spacing: 0.02em;
+}
+.footer-brand-logo span { font-weight: 400; color: var(--col-text-dim); }
+.footer-tagline {
+  font-size: 13px;
+  color: var(--col-text-muted);
+  line-height: 1.7;
+  max-width: 260px;
+  margin-bottom: 24px;
+  font-family: 'Source Sans 3', sans-serif;
+}
+.footer-col-title {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--col-text-primary);
+  margin-bottom: 16px;
+}
+.footer-col a {
+  display: block;
+  font-size: 13px;
+  color: var(--col-text-muted);
+  text-decoration: none;
+  padding: 4px 0;
+  transition: color 0.2s, padding-left 0.2s var(--easing);
+  font-family: 'Source Sans 3', sans-serif;
+}
+.footer-col a:hover { color: #fff; padding-left: 6px; }
+.newsletter-title {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--col-text-primary);
+  margin-bottom: 10px;
+}
+.newsletter-sub {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 13px;
+  color: var(--col-text-muted);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+.newsletter-form { display: flex; flex-direction: column; gap: 8px; }
+.newsletter-form input {
+  background: #1a1c1e;
+  border: 1px solid var(--col-border-light);
+  padding: 8px 14px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 12px;
+  color: var(--col-text-secondary);
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+  border-radius: 4px;
+  width: 100%;
+}
+.newsletter-form input:focus { border-color: var(--col-text-muted); background: #1e2022; }
+.newsletter-form button {
+  background: var(--col-accent);
+  color: #161819;
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s, transform 0.15s;
+  width: 100%;
+}
+.newsletter-form button:hover { background: #fff; transform: translateY(-1px); }
+.divider { width: 100%; height: 1px; background: var(--col-border); }
+.contact-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 6vw;
+  background: #0d0f10;
+  transition: background 0.2s;
+}
+.contact-item-row:hover { background: #1a1c1e; }
+.contact-item {
+  font-size: 14px;
+  color: var(--col-text-secondary);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 300;
+  transition: color 0.2s;
+}
+.contact-item-row:hover .contact-item { color: #fff; }
+.copy-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+}
+.copy-text { font-size: 11px; color: #3a4248; font-family: 'Source Sans 3', sans-serif; }
+.copy-links { display: flex; gap: 20px; }
+.copy-links a {
+  font-size: 11px;
+  color: #3a4248;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-family: 'Source Sans 3', sans-serif;
+}
+.copy-links a:hover { color: var(--col-text-muted); }
+
+/* ─── Mobile ───────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .nav-links { display: none !important; }
+  .nav-hamburger { display: flex; }
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 42px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 12, 13, 0.98);
+    backdrop-filter: blur(20px);
+    z-index: 250;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .mobile-menu.open { display: block; animation: fadeUp 0.3s var(--easing); }
+  body.menu-open { overflow: hidden; }
+  .mobile-menu a {
+    display: block;
+    padding: 10px 6vw;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #657580;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(30,32,34,0.8);
+    transition: color 0.15s, padding-left 0.2s var(--easing);
+  }
+  .mobile-menu a:hover { color: #fff; padding-left: calc(6vw + 8px); }
+  .mobile-menu .mob-section-title {
+    display: block;
+    padding: 10px 6vw;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--col-text-primary);
+    border-bottom: 1px solid var(--col-border);
+    background: #111315;
+    text-decoration: none;
+  }
+  .mobile-menu .mob-sub a {
+    padding-left: calc(6vw + 16px);
+    font-size: 14px;
+    color: #7a8690;
+  }
+  .mob-spacer { display: block; height: 80px; background: rgba(10,12,13,0.98); }
+}
+@media (min-width: 769px) {
+  .nav-hamburger { display: none; }
+  .mobile-menu { display: none !important; }
+}
+
+@media (max-width: 600px) {
+  .hero-screen { height: 100svh; min-height: unset; }
+  .hero-black { flex: 0 0 67svh; padding-top: 42px; }
+  .hero-photo { flex: 0 0 33svh; min-height: unset; }
+  .hero-photo img { object-position: right top; }
+  .hero-logo-img { width: 80svw; }
+
+  .vc-wrap { display: flex !important; flex-direction: column !important; }
+  .vc-boxes { order: 1; width: 100%; }
+  .vc-boxes .vc-box { flex: none; min-height: 64px; align-items: center !important; }
+  .vc-boxes .vc-box:nth-child(1) { flex: none; padding-top: 54px; padding-bottom: 18px; align-items: flex-end !important; }
+  .vc-boxes .vc-box:nth-child(3) { flex: none; padding-top: 18px; padding-bottom: 54px; align-items: flex-start !important; }
+  .vc-text { order: 2; border-left: none !important; border-top: 1px solid var(--col-border); }
+
+  .svc-grid { display: flex !important; flex-direction: column !important; }
+  .social-proof { display: flex !important; flex-direction: column !important; }
+  .stats-col { order: 1; border-right: none !important; border-bottom: 1px solid var(--col-border-light); }
+  .testimonials-col { order: 2; }
+  .stat-row { padding: 16px 0; }
+
+  .cta-wrap { display: flex !important; flex-direction: column !important; }
+  .cta-image { order: 1; height: 240px; min-height: unset; overflow: hidden; }
+  .cta-image img.cta-bg { width: 100%; height: 100%; object-fit: cover; display: block; position: absolute; }
+  .cta-left { order: 2; min-height: auto !important; border-right: none !important; border-top: 1px solid var(--col-border); padding: 48px 6vw !important; }
+
+  footer { overflow-x: hidden; }
+  .footer-grid { display: flex !important; flex-direction: column !important; gap: 28px !important; }
+  .footer-tagline { max-width: 100% !important; }
+  .copy-bar { flex-direction: column; gap: 10px; align-items: flex-start; }
+  .copy-links { flex-wrap: wrap; gap: 10px; }
+}
+
+@media (max-width: 900px) and (orientation: landscape) and (max-height: 500px) {
+  .hero-screen { height: auto; min-height: unset; }
+  .hero-black { height: 100svh; flex: none; justify-content: center; padding: 42px 6vw 0; }
+  .hero-logo-img { width: 38svw; }
+  .hero-photo { height: 60svh; min-height: unset; flex: none; }
+}
+
+@media (min-width: 1600px) {
+  .ql-title { font-size: 20px; }
+  .vc-headline, .svc-heading, .cta-heading { font-size: 26px; }
+  .vc-tagline, .svc-card-desc, .cta-body, .t-quote { font-size: 16px; }
+  .stat-text-num { font-size: 19px; }
+}
+
+/* ─── Page-load animation on body ─────────────────────────────── */
+body { animation: fadeIn 0.5s ease both; }
+</style>
+</head>
+<body>
+
+<div class="hero-screen">
+  <nav id="mainNav">
+    <a href="index.html" class="nav-logo"><img src="/images/image_05.webp" alt="Vault CPA"></a>
+    <ul class="nav-links">
+      <li><a href="about.html">About Us</a></li>
+      <li>
+        <a href="corporate-services.html">Corporate Services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="dropdown">
+          <a href="review-assurance.html">Review &amp; Assurance</a>
+          <a href="corporate-tax.html">Corporate Tax Services</a>
+          <a href="compilation-bookkeeping.html">Compilation, Accounting &amp; Bookkeeping</a>
+          <a href="outsourced-cfo.html">Outsourced CFO &amp; Controller</a>
+          <a href="corporate-secretarial.html">Corporate Secretarial Services</a>
+          <a href="cloud-accounting.html">Cloud Accounting &amp; Software</a>
+          <a href="financial-planning.html">Financial Planning</a>
+        </div>
+      </li>
+      <li>
+        <a href="personal-services.html">Personal Services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="dropdown">
+          <a href="personal-tax.html">Personal Tax Services</a>
+          <a href="financial-retirement-planning.html">Financial &amp; Retirement Planning</a>
+          <a href="self-employed.html">Self-employed &amp; Contractor Support</a>
+          <a href="estate-wealth-transition.html">Estate &amp; Wealth Transition</a>
+          <a href="cra-representation.html">CRA Representation</a>
+        </div>
+      </li>
+      <li>
+        <a href="industries.html">Industries <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="dropdown">
+          <a href="construction.html">Construction</a>
+          <a href="healthcare.html">Health Care</a>
+          <a href="real-estate.html">Real Estate</a>
+          <a href="professional-services.html">Professional Services</a>
+          <a href="retail.html">Retail</a>
+          <a href="technology.html">Technology</a>
+          <a href="entertainment.html">Entertainment</a>
+          <a href="manufacturing-wholesale.html">Manufacturing &amp; Wholesale</a>
+        </div>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="mob-section-title" href="about.html">About Us</a>
+    <a class="mob-section-title" href="corporate-services.html">Corporate Services</a>
+    <div class="mob-sub">
+      <a href="review-assurance.html">Review &amp; Assurance</a>
+      <a href="corporate-tax.html">Corporate Tax Services</a>
+      <a href="compilation-bookkeeping.html">Compilation, Accounting &amp; Bookkeeping</a>
+      <a href="outsourced-cfo.html">Outsourced CFO &amp; Controller</a>
+      <a href="corporate-secretarial.html">Corporate Secretarial Services</a>
+      <a href="cloud-accounting.html">Cloud Accounting &amp; Software</a>
+      <a href="financial-planning.html">Financial Planning</a>
+    </div>
+    <a class="mob-section-title" href="personal-services.html">Personal Services</a>
+    <div class="mob-sub">
+      <a href="personal-tax.html">Personal Tax Services</a>
+      <a href="financial-retirement-planning.html">Financial &amp; Retirement Planning</a>
+      <a href="self-employed.html">Self-employed &amp; Contractor Support</a>
+      <a href="estate-wealth-transition.html">Estate &amp; Wealth Transition</a>
+      <a href="cra-representation.html">CRA Representation</a>
+    </div>
+    <a class="mob-section-title" href="industries.html">Industries</a>
+    <div class="mob-sub">
+      <a href="construction.html">Construction</a>
+      <a href="healthcare.html">Health Care</a>
+      <a href="real-estate.html">Real Estate</a>
+      <a href="professional-services.html">Professional Services</a>
+      <a href="retail.html">Retail</a>
+      <a href="technology.html">Technology</a>
+      <a href="entertainment.html">Entertainment</a>
+      <a href="manufacturing-wholesale.html">Manufacturing &amp; Wholesale</a>
+    </div>
+    <a class="mob-section-title" href="contact.html">Contact Us</a>
+    <div class="mob-spacer"></div>
+  </div>
+
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+
+  <div class="hero-black">
+    <img class="hero-logo-img" src="/images/image_06.webp" alt="Vault CPA">
+    <div class="hero-tagline">Strength Behind Numbers</div>
+    <div class="hero-scroll-hint" onclick="document.querySelector('.vc-wrap').scrollIntoView({behavior:'smooth'})">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </div>
+
+  <div class="hero-photo">
+    <img src="/images/image_07.webp" alt="Vault CPA Vancouver office">
+  </div>
+</div>
+
+<div class="vc-wrap">
+  <div class="vc-boxes">
+    <a href="corporate-services.html" class="vc-box reveal">
+      <div><div class="ql-title">Corporate Services</div></div>
+      <svg class="ql-arrow" viewBox="0 0 24 24" fill="none" stroke="#9aa2a8" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <a href="personal-services.html" class="vc-box reveal" style="transition-delay:0.08s">
+      <div><div class="ql-title">Personal Services</div></div>
+      <svg class="ql-arrow" viewBox="0 0 24 24" fill="none" stroke="#9aa2a8" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <a href="industries.html" class="vc-box reveal" style="transition-delay:0.16s">
+      <div><div class="ql-title">Industries We Serve</div></div>
+      <svg class="ql-arrow" viewBox="0 0 24 24" fill="none" stroke="#9aa2a8" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+  <div class="vc-text reveal-right">
+    <div class="vc-accent-line"></div>
+    <div class="vc-headline">Financial Clarity.<br><span>Strategic Confidence.</span></div>
+    <p class="vc-tagline">At Vault CPA, we go beyond reporting numbers, delivering insight that drives better decisions. From year-end filings to ongoing CFO support, we bring structure, compliance and strategic clarity to every engagement. We keep our client roster intentionally small so every file gets senior-level attention — not a junior handoff.</p>
+    <a href="contact.html#contact-form" class="vc-btn">Book a free consultation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</div>
+
+<div class="svc-section" id="corporate">
+  <div class="svc-header reveal">
+    <div class="svc-kicker">What we do</div>
+    <div class="svc-heading">Accounting, tax and advisory<br><em>built around you.</em></div>
+  </div>
+  <div class="svc-grid">
+    <div class="svc-card reveal">
+      <div class="svc-card-tag">For Business Owners &amp; Entrepreneurs</div>
+      <p class="svc-card-desc">We handle the full accounting lifecycle for incorporated businesses from year-end filings and corporate tax to bookkeeping, review engagements, and outsourced CFO support. Whether you need compliance handled or strategic financial guidance, we work alongside you as a long-term partner.</p>
+      <a href="corporate-services.html" class="svc-card-link">Explore corporate services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="svc-card reveal" style="transition-delay:0.12s">
+      <div class="svc-card-tag">For Individuals &amp; Professionals</div>
+      <p class="svc-card-desc">From personal tax returns to retirement and estate planning, we give individuals and self-employed professionals the same precision we bring to corporate clients. We also represent clients before the CRA and help navigate audits, disputes, and complex tax situations with confidence.</p>
+      <a href="personal-services.html" class="svc-card-link">Explore personal services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<div class="cta-wrap" id="personal">
+  <div class="cta-left reveal-left">
+    <div class="cta-kicker">Get Started</div>
+    <div class="cta-accent"></div>
+    <div class="cta-heading">Clarity starts with one <span>conversation.</span></div>
+    <p class="cta-body">Available year-round, not just at tax season. Let's talk about what we can do for you.</p>
+    <a href="contact.html#contact-form" class="cta-btn">Book a free consultation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+  <div class="cta-image reveal-right" style="position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;min-height:320px;">
+    <img src="/images/image_08.webp" class="cta-bg cta-bg-desktop" alt="">
+    <img src="/images/handshake_mobile.webp" class="cta-bg cta-bg-mobile" style="display:none;" alt="">
+    <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:1;">
+      <img src="/images/image_06.webp" alt="Vault CPA" style="width:clamp(220px,50%,440px);height:auto;mix-blend-mode:lighten;">
+    </div>
+  </div>
+</div>
+
+<div class="social-proof" id="industries">
+  <div class="stats-col reveal-left">
+    <div class="stat-row"><div class="stat-text-num">CPA Certified</div><div class="stat-text-label">Chartered Professional Accountant</div></div>
+    <div class="stat-row"><div class="stat-text-num">Vancouver Local</div><div class="stat-text-label">A Boutique Accounting Firm</div></div>
+    <div class="stat-row"><div class="stat-text-num">12+ Industries</div><div class="stat-text-label">Served across BC</div></div>
+    <div class="stat-row"><div class="stat-text-num">5 Star</div><div class="stat-text-label">Client Satisfaction</div></div>
+  </div>
+  <div class="testimonials-col reveal-right">
+    <div class="t-header">Client Testimonials</div>
+    <div class="testimonial-slide active">
+      <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="t-quote">Working with your team has been one of the best decisions for our clinic. What really stands out is how accessible the staff are. We never feel like we&rsquo;re waiting days for an answer. Whether it&rsquo;s a quick tax question or something more complex, they respond promptly and explain everything in plain English.</p>
+      <div class="t-author">Pharmalife Pharmacy</div>
+      <div class="t-company">Medical &amp; Pharmacy Client</div>
+    </div>
+    <div class="testimonial-slide">
+      <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="t-quote">The team at Vault CPA helped us set up our accounting system and organize our billing and online payment collection. We&rsquo;ve also received solid guidance on qualifying business expenses, which has given us more confidence in our tax position.</p>
+      <div class="t-author">Azimi Marketing</div>
+      <div class="t-company">Marketing Agency Client</div>
+    </div>
+    <div class="testimonial-slide">
+      <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="t-quote">Vault CPA set up our accounting and inventory system from the start, which made a big difference in how smoothly we operate. Our bookkeeping and GST filings have always been done on time. Year-end filing and my personal tax advice have also been handled very well.</p>
+      <div class="t-author">ABR Cut Masters</div>
+      <div class="t-company">Manufacturing Client</div>
+    </div>
+    <div class="testimonial-slide">
+      <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="t-quote">We hired Vault CPA to handle the sale of our clinic and were very pleased with how everything was managed. I received clear advice on the Lifetime Capital Gains Deduction, and they ensured the shares qualified properly.</p>
+      <div class="t-author">Cure Medical Clinic</div>
+      <div class="t-company">Healthcare Client</div>
+    </div>
+    <div class="t-controls" id="dots"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <a href="index.html" class="footer-brand-logo">Vault <span>CPA</span></a>
+      <p class="footer-tagline">Helping businesses and individuals navigate accounting with precision, insight, and a trusted partner by their side.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Services</div>
+      <a href="corporate-services.html">Corporate Services</a>
+      <a href="personal-services.html">Personal Services</a>
+      <a href="industries.html">Industries We Serve</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Resources</div>
+      <a href="https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services.html" target="_blank" rel="noopener">Client Portal</a>
+      <a href="guides-resources.html">Guides and Publications</a>
+      <a href="https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services.html" target="_blank" rel="noopener">My CRA Account</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Company</div>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <div>
+      <div class="newsletter-title">Newsletter</div>
+      <p class="newsletter-sub">Tax tips, deadlines and financial insight delivered to your inbox.</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Your email address">
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="contact-item-row"><a href="tel:+16047793604" class="contact-item">604.779.3604</a></div>
+  <div class="divider"></div>
+  <div class="contact-item-row"><a href="mailto:info@vaultcpa.com" class="contact-item">info@vaultcpa.com</a></div>
+  <div class="divider"></div>
+  <div class="contact-item-row"><a href="https://maps.google.com/?q=601-1455+Howe+St+Vancouver+BC+V6Z+1C2" target="_blank" rel="noopener" class="contact-item">601 &ndash; 1455 Howe St., Vancouver BC &nbsp;V6Z 1C2</a></div>
+  <div class="divider"></div>
+  <div class="copy-bar">
+    <span class="copy-text">&copy; 2026 Vault CPA. All rights reserved.</span>
+    <div class="copy-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ─── Testimonials ────────────────────────────────────────────── */
+(function(){
+  const slides = document.querySelectorAll('.testimonial-slide');
+  const dotsContainer = document.getElementById('dots');
+  let current = 0;
+  let timer;
+
+  slides.forEach(function(_, i) {
+    const d = document.createElement('button');
+    d.className = 't-dot' + (i === 0 ? ' active' : '');
+    d.onclick = function() { goTo(i); resetTimer(); };
+    dotsContainer.appendChild(d);
+  });
+
+  function goTo(n) {
+    slides[current].classList.remove('active');
+    document.querySelectorAll('.t-dot')[current].classList.remove('active');
+    current = (n + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    document.querySelectorAll('.t-dot')[current].classList.add('active');
+  }
+
+  function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(function(){ goTo(current + 1); }, 5000);
+  }
+
+  resetTimer();
+
+  /* Swipe */
+  var col = document.querySelector('.testimonials-col');
+  if (col) {
+    var startX = 0;
+    col.addEventListener('touchstart', function(e){ startX = e.touches[0].clientX; }, { passive: true });
+    col.addEventListener('touchend', function(e){
+      var diff = startX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) { goTo(current + (diff > 0 ? 1 : -1)); resetTimer(); }
+    }, { passive: true });
+  }
+})();
+
+/* ─── Scroll reveal ───────────────────────────────────────────── */
+(function(){
+  function check() {
+    document.querySelectorAll('.reveal:not(.visible), .reveal-left:not(.visible), .reveal-right:not(.visible)').forEach(function(el) {
+      if (el.getBoundingClientRect().top < window.innerHeight - 60) {
+        el.classList.add('visible');
+      }
+    });
+  }
+  window.addEventListener('scroll', check, { passive: true });
+  check();
+})();
+
+/* ─── Nav scroll class ────────────────────────────────────────── */
+(function(){
+  var nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', function(){
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+})();
+
+/* ─── Hamburger menu ──────────────────────────────────────────── */
+(function(){
+  var btn = document.getElementById('hamburger');
+  var menu = document.getElementById('mobileMenu');
+  if (!btn || !menu) return;
+  var scrollY = 0;
+  function openMenu() {
+    scrollY = window.scrollY || window.pageYOffset;
+    document.body.style.top = '-' + scrollY + 'px';
+    document.body.classList.add('menu-open');
+    menu.classList.add('open');
+    btn.classList.add('open');
+  }
+  function closeMenu() {
+    menu.classList.remove('open');
+    btn.classList.remove('open');
+    document.body.classList.remove('menu-open');
+    document.body.style.top = '';
+    window.scrollTo(0, scrollY);
+  }
+  btn.addEventListener('click', function(){
+    if (menu.classList.contains('open')) { closeMenu(); } else { openMenu(); }
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', closeMenu);
+  });
+})();
+
+/* ─── CTA image responsive ────────────────────────────────────── */
+(function(){
+  var desktopImg = document.querySelector('.cta-bg-desktop');
+  var mobileImg = document.querySelector('.cta-bg-mobile');
+  if (!desktopImg || !mobileImg) return;
+  function update() {
+    var isNarrow = window.innerWidth <= 768;
+    desktopImg.style.display = isNarrow ? 'none' : 'block';
+    mobileImg.style.display  = isNarrow ? 'block' : 'none';
+  }
+  update();
+  window.addEventListener('resize', update);
+})();
+</script>
+</body>
+</html>
